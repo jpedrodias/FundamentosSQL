@@ -42,8 +42,10 @@ base de dados: mydatabase
 
 # 4. Aceder ao Adminer ou pgAdmin
 ```bash
-http://localhost:8081
-http://localhost:8082
+http://localhost:8081 - Adminer
+http://localhost:8082 - pgAdmin
+http://localhost:8083 - phpMyAdmin
+
 ```
 
 6. Outras ferramentas
