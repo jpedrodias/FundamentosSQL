@@ -12,6 +12,39 @@ Formação de Fundamentos de SQL (50h)
 
 Preparação do sistema usando:
 
+1. Clonar:
+```bash
+git clone https://github.com/jpedrodias/FundamentosSQL.git
+cd FundamentosSQL
+```
+
+2. Inicial docker container
+```bash
+docker compose up -d
+```
+
+3. Aceder ao Adminer ou pgAdmin
+```bash
+http://localhost:8081
+http://localhost:8082
+```
+
+4. Dados de acesso ao servidor MySQL  
+```yml
+Servidor: mysql
+user: mysql_user
+password: mysql_password
+base de dados: mydatabase
+```
+
+5. Dados de acesso ao servidor Postgress  
+```yml
+Servidor: postgres
+user: postgres_user
+password: postgres_password
+base de dados: mydatabase
+```
+
 
 * * *
 **Referências:**
