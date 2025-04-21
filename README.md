@@ -40,7 +40,7 @@ password: postgres_password
 base de dados: mydatabase
 ```
 
-# 4. Aceder ao Adminer ou pgAdmin
+# 4. Aceder ao Adminer, pgAdmin ou phpMyAdmin
 ```bash
 http://localhost:8081 - Adminer
 http://localhost:8082 - pgAdmin
