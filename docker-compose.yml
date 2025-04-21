@@ -1,6 +1,5 @@
 # docker-compose file for PostgreSQL, Adminer, and pgAdmin
 
-
 services:
   postgres:
     restart: always
@@ -9,8 +8,6 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - /etc/localtime:/etc/localtime:ro
-    env_file:
-      - ./.env_postgres
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
@@ -32,8 +29,6 @@ services:
     restart: always
     ports:
       - 3306:3306
-    env_file:
-      - ./.env_mysql
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -45,6 +40,11 @@ services:
       - mysql_data:/var/lib/mysql
     networks:
       - default
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
 
   adminer:
     image: adminer
@@ -70,7 +70,6 @@ services:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - pgadmin_data:/var/lib/pgadmin
-
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@admin.com
       PGADMIN_DEFAULT_PASSWORD: admin
@@ -81,6 +80,7 @@ services:
 
 volumes:
   postgres_data:
+  mysql_data:
   pgadmin_data:
 
 networks:
