@@ -1,0 +1,7 @@
+# Lista de ficheiros e pastas a ignorar pelo Git
+# ficheiros temporários ou secretos
+*.env_production
+*.env_mysql_production
+*.env_postgres_production
+*.log
+*.sqlite
