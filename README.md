@@ -3,9 +3,9 @@ Formação de Fundamentos de SQL (50h)
 
 > Entidade Formadora: [EISnt](https://eisnt.com/)
 >
-> Duração: 50h
+> Duração: 25h
 > 
-> 2025-01 - 2025-04
+> 2025-06 - 2025-07
 
 
 * * *
