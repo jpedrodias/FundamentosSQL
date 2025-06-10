@@ -61,7 +61,7 @@ http://localhost:8083 - phpMyAdmin<br>
 
 
 
-6. Outras ferramentas
+## 5. Outras ferramentas
 
 [DBveaver](https://dbeaver.io/download/)
 [pgAdmin](https://www.pgadmin.org/download/)
