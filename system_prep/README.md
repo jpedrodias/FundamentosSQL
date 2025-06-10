@@ -55,9 +55,9 @@ base de dados: mydatabase
 
 # 4. Aceder ao Adminer, pgAdmin ou phpMyAdmin
 
-http://localhost:8081 [abrir](http://localhost:8081) - Adminer
-http://localhost:8082 [abrir](http://localhost:8082) - pgAdmin (admin@admin.com | admin)
-http://localhost:8083 [abrir](http://localhost:8083) - phpMyAdmin
+http://localhost:8081 - Adminer<br>
+http://localhost:8082 - pgAdmin (admin@admin.com | admin)<br>
+http://localhost:8083 - phpMyAdmin<br>
 
 
 
