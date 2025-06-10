@@ -1,4 +1,4 @@
-# Fundamentos de SQL: Preparação do sistema usando Docker:
+# Preparação do sistema usando Docker:
 
 # 1. Clonar:
 ```bash
