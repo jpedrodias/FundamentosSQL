@@ -11,6 +11,7 @@ Formação de Fundamentos de SQL (50h)
 * * *
 
 # Preparação do sistema:
+Preparação de servidores de bases de dados e ferramentas web de acesso 
 - [usando **Docker**](system_prep/README.md)
 
 
