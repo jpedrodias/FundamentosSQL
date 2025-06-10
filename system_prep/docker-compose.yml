@@ -1,4 +1,5 @@
 # docker-compose file for PostgreSQL, Adminer, and pgAdmin
+name: FundamentosSQL
 
 services:
   postgres:
