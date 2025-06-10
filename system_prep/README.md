@@ -3,11 +3,12 @@ Neste docker-compose existem dois servidores de base de dados (mysql e postgres)
 
 
 
-Sistemas de Gerenciamento de Banco de Dados (SGBD):
+**Servers** - Sistemas de Gerenciamento de Banco de Dados (SGBD):
 - MySQL	- SGBD Relacional (RDBMS);
 - PostgreSQL - SGBD Relacional Avançado (ORDBMS)
 
-Ferramentas de Administração de Banco de Dados:
+
+**Tools** - Ferramentas de Administração de Banco de Dados:
 - Adminer: Suporta vários SGBDs via uma única interface PHP leve;
 - pgAdmin: Ferramenta oficial de administração para PostgreSQL;
 - phpMyAdmin: Focado em MySQL/MariaDB, com uma interface web.
