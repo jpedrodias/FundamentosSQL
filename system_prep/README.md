@@ -54,15 +54,14 @@ base de dados: mydatabase
 
 
 # 4. Aceder ao Adminer, pgAdmin ou phpMyAdmin
-
-http://localhost:8081 - Adminer<br>
-http://localhost:8082 - pgAdmin (admin@admin.com | admin)<br>
-http://localhost:8083 - phpMyAdmin<br>
+- http://localhost:8081 - Adminer
+- http://localhost:8082 - pgAdmin (admin@admin.com | admin)
+- http://localhost:8083 - phpMyAdmin
 
 
 
 ## 5. Outras ferramentas
+- [DBveaver](https://dbeaver.io/download/)
+- [pgAdmin](https://www.pgadmin.org/download/)
+- [sqlite3](https://www.sqlite.org/download.html)
 
-[DBveaver](https://dbeaver.io/download/)
-[pgAdmin](https://www.pgadmin.org/download/)
-[sqlite3](https://www.sqlite.org/download.html)
