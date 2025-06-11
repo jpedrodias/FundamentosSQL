@@ -3,9 +3,11 @@ name: FundamentosSQL
 
 services:
   postgres:
-    restart: always
-    container_name: postgres_container
     image: postgres:latest
+    container_name: postgres_server
+    restart: unless-stopped
+    ports:
+      - 5432:5432
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - /etc/localtime:/etc/localtime:ro
@@ -14,8 +16,6 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
       TZ: ${TZ}
-    ports:
-      - 5432:5432
     networks:
       - default
     healthcheck:
@@ -26,8 +26,8 @@ services:
 
   mysql:
     image: mysql:latest
-    container_name: mysql_container
-    restart: always
+    container_name: mysql_server
+    restart: unless-stopped
     ports:
       - 3306:3306
     environment:
@@ -50,7 +50,7 @@ services:
   adminer:
     image: adminer
     container_name: adminer
-    restart: always
+    restart: unless-stopped
     ports:
       - 8081:8080
     depends_on:
@@ -63,7 +63,7 @@ services:
   pgadmin:
     image: dpage/pgadmin4
     container_name: pgadmin
-    restart: always
+    restart: unless-stopped
     ports:
       - 8082:80
     depends_on:
