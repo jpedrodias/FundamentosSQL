@@ -67,8 +67,13 @@ base de dados: mydatabase
 
 ## b. apenas online
 - [SandboxSQL](https://sandboxsql.com/)
-- [Google Colab](https://colab.research.google.com/)
-```python
 
+- [Google Colab](https://colab.research.google.com/)
+
+```python
+!pip install jupysql ipython-sql sqlite3
+
+%load_ext sql
+%sql sqlite:///database.sqlite
 ```
 
