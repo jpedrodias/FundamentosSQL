@@ -1,0 +1,4 @@
+ipython
+jupyterlab
+jupysql
+ipython-sql

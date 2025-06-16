@@ -77,3 +77,9 @@ base de dados: mydatabase
 %sql sqlite:///database.sqlite
 ```
 
+## c. local jupyter
+```bash
+python -m venv C:\TEMP\venvs\FundamentosSQL
+C:\TEMP\venvs\FundamentosSQL\Scripts\Activate.ps1
+```
+
