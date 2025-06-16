@@ -1,8 +1,6 @@
 # Preparação do sistema usando Docker:
 Neste docker-compose existem dois servidores de base de dados (mysql e postgres) e três serviços para aceder via web a esses servidores.
 
-
-
 **Servers** - Sistemas de Gerenciamento de Banco de Dados (SGBD):
 - **MySQL**	- SGBD Relacional (RDBMS);
 - **PostgreSQL** - SGBD Relacional Avançado (ORDBMS)
@@ -67,6 +65,8 @@ base de dados: mydatabase
 
 ## b. apenas online
 - [SandboxSQL](https://sandboxsql.com/)
+
+***
 
 # Preparação do sistema para correr em Jupyter Notebook
 
