@@ -57,15 +57,6 @@ base de dados: mydatabase
 - http://localhost:8083 - phpMyAdmin
 
 
-# Outras Ferramentas
-## a. aplicações
-- [DBveaver](https://dbeaver.io/download/)
-- [pgAdmin](https://www.pgadmin.org/download/)
-- [sqlite3](https://www.sqlite.org/download.html)
-
-## b. apenas online
-- [SandboxSQL](https://sandboxsql.com/)
-
 ***
 
 # Preparação do sistema para correr em Jupyter Notebook
@@ -87,3 +78,12 @@ C:\TEMP\venvs\FundamentosSQL\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
+***
+# Outras Ferramentas
+## a. aplicações
+- [DBveaver](https://dbeaver.io/download/)
+- [pgAdmin](https://www.pgadmin.org/download/)
+- [sqlite3](https://www.sqlite.org/download.html)
+
+## b. apenas online
+- [SandboxSQL](https://sandboxsql.com/)
