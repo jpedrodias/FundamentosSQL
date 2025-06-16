@@ -59,9 +59,16 @@ base de dados: mydatabase
 - http://localhost:8083 - phpMyAdmin
 
 
-
-## 5. Outras ferramentas
+# Outras Ferramentas
+## a. aplicações
 - [DBveaver](https://dbeaver.io/download/)
 - [pgAdmin](https://www.pgadmin.org/download/)
 - [sqlite3](https://www.sqlite.org/download.html)
+
+## b. apenas online
+- [SandboxSQL](https://sandboxsql.com/)
+- [Google Colab](https://colab.research.google.com/)
+```python
+
+```
 
