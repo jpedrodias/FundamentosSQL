@@ -6,6 +6,8 @@ Formação de Fundamentos de SQL (50h)
 > Duração: 25h
 > 
 > 2025-06 - 2025-07
+>
+> Formador: Hugo Dias
 
 
 * * *
