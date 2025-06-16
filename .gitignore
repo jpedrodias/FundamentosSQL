@@ -5,3 +5,4 @@
 *.env_postgres_production
 *.log
 *.sqlite
+.venv/
