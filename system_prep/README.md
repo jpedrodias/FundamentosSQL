@@ -68,7 +68,7 @@ base de dados: mydatabase
 ## b. apenas online
 - [SandboxSQL](https://sandboxsql.com/)
 
-- [Google Colab](https://colab.research.google.com/)
+# Preparação do sistema para correr em Jupyter Notebook
 
 ```python
 !pip install jupysql ipython-sql sqlite3
@@ -77,7 +77,10 @@ base de dados: mydatabase
 %sql sqlite:///database.sqlite
 ```
 
-## c. local jupyter
+## a. Online Jupyter
+- [Google Colab](https://colab.research.google.com/)
+
+## b. Local Jupyter
 ```bash
 python -m venv C:\TEMP\venvs\FundamentosSQL
 C:\TEMP\venvs\FundamentosSQL\Scripts\Activate.ps1
