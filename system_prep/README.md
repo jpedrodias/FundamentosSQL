@@ -81,5 +81,6 @@ base de dados: mydatabase
 ```bash
 python -m venv C:\TEMP\venvs\FundamentosSQL
 C:\TEMP\venvs\FundamentosSQL\Scripts\Activate.ps1
+pip install -r requirements.txt
 ```
 
