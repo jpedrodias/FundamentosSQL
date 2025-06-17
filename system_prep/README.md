@@ -1,15 +1,15 @@
-# Preparação do sistema usando Docker:
+# ⚙️ Preparação do sistema usando Docker:
 Neste docker-compose existem dois servidores de base de dados (mysql e postgres) e três serviços para aceder via web a esses servidores.
 
 **Servers** - Sistemas de Gerenciamento de Banco de Dados (SGBD):
-- **MySQL**	- SGBD Relacional (RDBMS);
-- **PostgreSQL** - SGBD Relacional Avançado (ORDBMS)
+- 🐬 **MySQL**	- SGBD Relacional (RDBMS);
+- 🐘 **PostgreSQL** - SGBD Relacional Avançado (ORDBMS)
 
 
 **Tools** - Ferramentas de Administração de Banco de Dados:
-- **Adminer**: Suporta vários SGBDs via uma única interface PHP leve;
-- **pgAdmin**: Ferramenta oficial de administração para PostgreSQL;
-- **phpMyAdmin**: Focado em MySQL/MariaDB, com uma interface web.
+- 🛠️ **Adminer**: Suporta vários SGBDs via uma única interface PHP leve;
+- 🐘 **pgAdmin**: Ferramenta oficial de administração para PostgreSQL;
+- 🐬 **phpMyAdmin**: Focado em MySQL/MariaDB, com uma interface web.
 
 
 
@@ -59,7 +59,7 @@ base de dados: mydatabase
 
 ***
 
-# Preparação do sistema para correr em Jupyter Notebook
+# 📓 Preparação do sistema para correr em Jupyter Notebook
 
 ```python
 !pip install jupysql ipython-sql sqlite3
@@ -82,7 +82,7 @@ pip install -r requirements.txt
 
 ***
 
-# Outras Ferramentas
+# 🧰 Outras Ferramentas
 ## a. aplicações
 - [DBveaver](https://dbeaver.io/download/)
 - [sqlite3](https://www.sqlite.org/download.html) - ferramenta de linha de comandos
