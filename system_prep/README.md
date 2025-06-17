@@ -52,9 +52,9 @@ base de dados: mydatabase
 
 
 ## 4. Aceder ao Adminer, pgAdmin ou phpMyAdmin
-- http://localhost:8081 - Adminer
-- http://localhost:8082 - pgAdmin (admin@admin.com | admin)
-- http://localhost:8083 - phpMyAdmin
+- http://localhost:8081 - Adminer (para ligação a mysql e postgres)
+- http://localhost:8082 - pgAdmin (admin@admin.com | admin) (para ligação apenas postgres)
+- http://localhost:8083 - phpMyAdmin (para ligalão apenas mysql/mariadb)
 
 
 ***
