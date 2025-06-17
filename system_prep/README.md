@@ -18,12 +18,12 @@ Ter o docker instalado.
 [Docker Desktop](https://www.docker.com/get-started/)
 
 
-## 1. Clonar:
+## 1. Clonar este repositório:
 ```bash
 git clone https://github.com/jpedrodias/FundamentosSQL.git
 cd FundamentosSQL
 ```
-
+ou copiar apenas os ficheiros: `docker-compose.yml` e `.env` 
 
 ## 2. Inicial docker container
 ```bash
