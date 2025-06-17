@@ -1,4 +1,4 @@
-# ⚙️ Preparação do sistema usando Docker:
+# 🐳 Preparação do sistema para correr em Docker:
 Neste docker-compose existem dois servidores de base de dados (mysql e postgres) e três serviços para aceder via web a esses servidores.
 
 **Servers** - Sistemas de Gerenciamento de Banco de Dados (SGBD):
@@ -13,26 +13,26 @@ Neste docker-compose existem dois servidores de base de dados (mysql e postgres)
 
 
 
-# 0. Pré-requisito:
+## 0. Pré-requisito:
 Ter o docker instalado.
 [Docker Desktop](https://www.docker.com/get-started/)
 
 
-# 1. Clonar:
+## 1. Clonar:
 ```bash
 git clone https://github.com/jpedrodias/FundamentosSQL.git
 cd FundamentosSQL
 ```
 
 
-# 2. Inicial docker container
+## 2. Inicial docker container
 ```bash
 cd system_prep
 docker compose up -d
 ```
 
 
-# 3. Dados de acesso
+## 3. Dados de acesso
 3.1 ao servidor MySQL  
 ```yml
 Servidor: mysql
@@ -51,7 +51,7 @@ base de dados: mydatabase
 ```
 
 
-# 4. Aceder ao Adminer, pgAdmin ou phpMyAdmin
+## 4. Aceder ao Adminer, pgAdmin ou phpMyAdmin
 - http://localhost:8081 - Adminer
 - http://localhost:8082 - pgAdmin (admin@admin.com | admin)
 - http://localhost:8083 - phpMyAdmin
