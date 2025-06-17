@@ -70,6 +70,8 @@ base de dados: mydatabase
 
 ## a. Online Jupyter
 - [Google Colab](https://colab.research.google.com/)
+- [Jupyter](https://jupyter.org/try-jupyter/lab/)
+
 
 ## b. Local Jupyter
 ```bash
@@ -83,8 +85,9 @@ pip install -r requirements.txt
 # Outras Ferramentas
 ## a. aplicações
 - [DBveaver](https://dbeaver.io/download/)
-- [sqlite3](https://www.sqlite.org/download.html)
-- [pgAdmin](https://www.pgadmin.org/download/)
+- [sqlite3](https://www.sqlite.org/download.html) - ferramenta de linha de comandos
+- [DB Browser for SQLite](https://sqlitebrowser.org/) - ferramenta gráfica
+- [pgAdmin](https://www.pgadmin.org/download/) - ligação a db postgres
 
 ## b. apenas online
 - [SandboxSQL](https://sandboxsql.com/)
