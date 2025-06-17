@@ -84,10 +84,11 @@ pip install -r requirements.txt
 
 # 🧰 Outras Ferramentas
 ## a. aplicações
-- [DBveaver](https://dbeaver.io/download/)
-- [sqlite3](https://www.sqlite.org/download.html) - ferramenta de linha de comandos
-- [DB Browser for SQLite](https://sqlitebrowser.org/) - ferramenta gráfica
-- [pgAdmin](https://www.pgadmin.org/download/) - ligação a db postgres
+- [DBveaver](https://dbeaver.io/download/) - ligação a diferentes bases de dados;
+- [sqlite3](https://www.sqlite.org/download.html) - ferramenta de linha de comandos para ligar a sqlite;
+- [DB Browser for SQLite](https://sqlitebrowser.org/) - ferramenta gráfica para sqlite;
+- [pgAdmin](https://www.pgadmin.org/download/) - ligação a db postgres;
+- [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - para ligação a db mysql/mariadb
 
 ## b. apenas online
 - [SandboxSQL](https://sandboxsql.com/)
