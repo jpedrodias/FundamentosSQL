@@ -12,7 +12,7 @@ Neste docker-compose existem dois servidores de base de dados (mysql e postgres)
 - 🐬 **phpMyAdmin**: Focado em MySQL/MariaDB, com uma interface web.
 
 
-
+##
 ## 0. Pré-requisito:
 Ter o docker instalado.
 [Docker Desktop](https://www.docker.com/get-started/)
