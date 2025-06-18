@@ -82,7 +82,7 @@ pip install -r requirements.txt
 
 ***
 
-# 🧰 Outras Ferramentas
+# 🧰 Ferramentas para ligação a Bases de Dados
 ## a. aplicações
 - [DBveaver](https://dbeaver.io/download/) - ligação a diferentes bases de dados;
 - [sqlite3](https://www.sqlite.org/download.html) - ferramenta de linha de comandos para ligar a sqlite;
@@ -90,6 +90,7 @@ pip install -r requirements.txt
 - [pgAdmin](https://www.pgadmin.org/download/) - ligação a db postgres;
 - [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - para ligação a db mysql/mariadb
 - [SQL DBX](https://www.sqldbx.com/index.htm) - ligação a diferentes bases de dados;
+
 
 ## b. apenas online
 - [SandboxSQL](https://sandboxsql.com/)
