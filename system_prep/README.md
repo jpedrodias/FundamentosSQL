@@ -66,6 +66,9 @@ base de dados: mydatabase
 
 %load_ext sql
 %sql sqlite:///database.sqlite
+
+%config SqlMagic.displaylimit = None
+%sql PRAGMA foreign_keys = ON
 ```
 
 ## a. Online Jupyter
