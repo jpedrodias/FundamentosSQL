@@ -41,16 +41,7 @@ E neste caso, para parar estes serviço basta fazer `docker compose down`
 
 
 ## 3. Dados de acesso
-3.1 ao servidor MySQL  
-```yml
-Servidor: mysql
-user: mysql_user
-password: mysql_password
-base de dados: mydatabase
-```
-
-
-3.2 ao servidor Postgress  
+3.1 ao servidor `PostgresDB`  
 ```yml
 Servidor: postgres
 user: postgres_user
@@ -58,8 +49,15 @@ password: postgres_password
 base de dados: mydatabase
 ```
 
+3.1 ao servidor `MySQL`  
+```yml
+Servidor: mysql
+user: mysql_user
+password: mysql_password
+base de dados: mydatabase
+```
 
-3.2 ao servidor Postgress  
+3.3) ao servidor `MongoDB`  
 ```yml
 Servidor: mongo
 user: mongo_user
