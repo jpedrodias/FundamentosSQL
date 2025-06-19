@@ -2,6 +2,7 @@
 name: FundamentosSQL
 
 services:
+  # Servidor 1: PostgreSQL Configuration
   postgres:
     image: postgres:latest
     container_name: postgres_server
@@ -24,6 +25,7 @@ services:
       timeout: 5s
       retries: 5
 
+  # Servidor 2: MySQL Configuration
   mysql:
     image: mysql:latest
     container_name: mysql_server
@@ -47,6 +49,30 @@ services:
       timeout: 5s
       retries: 3
 
+  # Servidor 3: MongoDB Configuration
+  mongo:
+    image: mongo:latest
+    container_name: mongodb_server
+    restart: unless-stopped
+    ports:
+      - 27017:27017
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - mongodb_data:/data/db
+      - mongodb_config:/data/configdb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+      TZ: ${TZ}
+    networks:
+      - default
+    healthcheck:
+      test: ["CMD", "mongo", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Web Interfaces for Databases: vários
   adminer:
     image: adminer
     container_name: adminer
@@ -60,6 +86,7 @@ services:
     networks:
       - default
   
+  # Web Interfaces for Databases: postgres
   pgadmin:
     image: dpage/pgadmin4
     container_name: pgadmin
@@ -79,6 +106,7 @@ services:
     networks:
       - default
 
+  # Web Interfaces for Databases: MySQL
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin
@@ -98,10 +126,36 @@ services:
     networks:
       - default
 
+  # Web Interfaces for Databases: MongoDB
+  mongo-express:
+    image: mongo-express:latest
+    container_name: mongo_express
+    restart: unless-stopped
+    ports:
+      - "8084:8081"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - mongodb_data:/data/db
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      ME_CONFIG_MONGODB_ADMINPASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+      ME_CONFIG_MONGODB_SERVER: mongo
+      ME_CONFIG_BASICAUTH_USERNAME: ${ME_CONFIG_BASICAUTH_USERNAME}
+      ME_CONFIG_BASICAUTH_PASSWORD: ${ME_CONFIG_BASICAUTH_PASSWORD}
+      TZ: ${TZ}
+    depends_on:
+      - mongo
+    networks:
+      - default
+
+
 volumes:
-  postgres_data:
-  mysql_data:
-  pgadmin_data:
+  postgres_data: # Servidor 1: PostgreSQL
+  mysql_data:    # Servidor 2: MySQL
+  mongodb_data:  # Servidor 3: MongoDB
+  mongodb_config: # MongoDB Configurations
+  pgadmin_data:  # Web Interfaces for Databases: pgAdmin
+
 
 networks:
   default:

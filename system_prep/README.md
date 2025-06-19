@@ -59,10 +59,21 @@ base de dados: mydatabase
 ```
 
 
+3.2 ao servidor Postgress  
+```yml
+Servidor: mongo
+user: mongo_user
+password: mongo_password
+base de dados: mydatabase
+```
+
+
+
 ## 4. Aceder às db via Adminer, pgAdmin ou phpMyAdmin
 - http://localhost:8081 - **Adminer** (para ligação a mysql e postgres)
 - http://localhost:8082 - **pgAdmin** (admin@admin.com | admin) (para ligação apenas postgres)
-- http://localhost:8083 - **phpMyAdmin** (para ligalão apenas mysql/mariadb)
+- http://localhost:8083 - **phpMyAdmin** (apenas mysql/mariadb)
+- http://localhost:8084 - **Mongo Express** (admin | pass) (apenas MongoDB)
 
 
 ***
@@ -101,6 +112,7 @@ pip install -r requirements.txt
 - [pgAdmin](https://www.pgadmin.org/download/) - ligação a db postgres;
 - [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - para ligação a db mysql/mariadb
 - [SqlDbx](https://www.sqldbx.com/index.htm) - ligação a diferentes bases de dados;
+- [MongoDB Compass](https://www.mongodb.com/try/download/compass) - para ligação a MongoDB
 
 
 ## b. ferramentas web
