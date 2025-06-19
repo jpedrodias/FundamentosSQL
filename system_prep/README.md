@@ -120,7 +120,7 @@ pip install -r requirements.txt
 ---
 ---
 # 🧰 Ferramentas para ligação a Bases de Dados
-## a. aplicações
+## a) aplicações
 - [DBveaver](https://dbeaver.io/download/) - ligação a diferentes bases de dados;
 - [sqlite3](https://www.sqlite.org/download.html) - ferramenta de linha de comandos para ligar a sqlite;
 - [DB Browser for SQLite](https://sqlitebrowser.org/) - ferramenta gráfica para sqlite;
@@ -130,14 +130,14 @@ pip install -r requirements.txt
 - [MongoDB Compass](https://www.mongodb.com/try/download/compass) - para ligação a MongoDB
 
 
-## b. ferramentas web
+## b) ferramentas web
 - [Adminer](https://www.adminer.org/en/)
 - [pgAdmin](https://www.pgadmin.org/download/pgadmin-4-container/)
 - [phpMyAdmin](https://www.phpmyadmin.net/)
 - [Mongo Express](https://github.com/mongo-express/mongo-express)
 
 
-## b. apenas online
+## b) apenas online
 - [SandboxSQL](https://sandboxsql.com/)
 
 
