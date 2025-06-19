@@ -9,8 +9,8 @@ services:
     ports:
       - 5432:5432
     volumes:
-      - postgres_data:/var/lib/postgresql/data
       - /etc/localtime:/etc/localtime:ro
+      - postgres_data:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
@@ -46,32 +46,6 @@ services:
       interval: 10s
       timeout: 5s
       retries: 3
-
-  oracle:
-    image: oracle/database
-    container_name: oracle_server
-    restart: unless-stopped
-    ports:
-      - 1521:1521
-      - 8080:8080
-    environment:
-      ORACLE_PWD: ${ORACLE_PWD}
-      ORACLE_DATABASE: ${ORACLE_DATABASE}
-      ORACLE_CHARACTERSET: AL32UTF8
-      ORACLE_SID: ORCLCDB
-      ORACLE_PDB: XEPDB1
-      TZ: ${TZ}
-      
-    volumes:
-      - /etc/localtime:/etc/localtime:ro
-      - oracle_data:/opt/oracle/oradata
-    networks:
-      - default
-    healthcheck:
-      test: ["CMD", "sqlplus", "-S", "system/${ORACLE_PWD}@//localhost:1521/XEPDB1", "SELECT 1 FROM DUAL;"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
 
   adminer:
     image: adminer
@@ -111,6 +85,8 @@ services:
     restart: always
     ports:
       - 8083:80
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
     environment:
       PMA_HOST: mysql
       PMA_USER: ${MYSQL_USER}
@@ -122,13 +98,10 @@ services:
     networks:
       - default
 
-
 volumes:
   postgres_data:
   mysql_data:
   pgadmin_data:
-  oracle_data:
-
 
 networks:
   default:
