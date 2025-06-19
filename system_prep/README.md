@@ -90,7 +90,7 @@ docker system prune -a --volumes -f
 
 
 ---
-
+---
 # 📓 Preparação do sistema para correr em Jupyter Notebook
 
 ```python
