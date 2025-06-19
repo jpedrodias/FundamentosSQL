@@ -48,7 +48,7 @@ services:
       retries: 3
 
   oracle:
-    image: gvenzl/oracle-xe
+    image: oracle/database
     container_name: oracle_server
     restart: unless-stopped
     ports:
@@ -56,7 +56,12 @@ services:
       - 8080:8080
     environment:
       ORACLE_PWD: ${ORACLE_PWD}
+      ORACLE_DATABASE: ${ORACLE_DATABASE}
+      ORACLE_CHARACTERSET: AL32UTF8
+      ORACLE_SID: ORCLCDB
+      ORACLE_PDB: XEPDB1
       TZ: ${TZ}
+      
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - oracle_data:/opt/oracle/oradata
@@ -117,10 +122,13 @@ services:
     networks:
       - default
 
+
 volumes:
   postgres_data:
   mysql_data:
   pgadmin_data:
+  oracle_data:
+
 
 networks:
   default:
