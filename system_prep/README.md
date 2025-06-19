@@ -41,7 +41,7 @@ E neste caso, para parar estes serviço basta fazer `docker compose down`
 
 
 ## 3. Dados de acesso
-3.1 ao servidor `PostgresDB`  
+3.1) ao servidor `PostgresDB`  
 ```yml
 Servidor: postgres
 user: postgres_user
@@ -49,7 +49,7 @@ password: postgres_password
 base de dados: mydatabase
 ```
 
-3.1 ao servidor `MySQL`  
+3.2) ao servidor `MySQL`  
 ```yml
 Servidor: mysql
 user: mysql_user
@@ -73,7 +73,23 @@ base de dados: mydatabase
 - http://localhost:8084 - **Mongo Express** (admin | pass) (apenas MongoDB)
 
 
-***
+---
+## 5. 🧹 Limpeza completa do `cache` Docker
+Para além do download das imagens, o docker cria volumes que podem ocupar algum espaço em disco. 
+Usar as instruções seguintes com ponderação, pois poderá resultar na eliminação de mais do que deseja ou precisa. 
+
+```bash
+docker compose down
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+docker rmi $(docker images -q) -f
+docker volume rm $(docker volume ls -q)
+docker network prune -f
+docker system prune -a --volumes -f
+```
+
+
+---
 
 # 📓 Preparação do sistema para correr em Jupyter Notebook
 
@@ -124,17 +140,3 @@ pip install -r requirements.txt
 
 
 
----
-# 🧹 Limpeza completa do `cache` Docker
-Para além do download das imagens, o docker cria volumes que podem ocupar algum espaço em disco. 
-Usar as instruções seguintes com ponderação, pois poderá resultar na eliminação de mais do que deseja ou precisa. 
-
-```bash
-docker compose down
-docker stop $(docker ps -aq)
-docker rm $(docker ps -aq)
-docker rmi $(docker images -q) -f
-docker volume rm $(docker volume ls -q)
-docker network prune -f
-docker system prune -a --volumes -f
-```
