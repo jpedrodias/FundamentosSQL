@@ -119,6 +119,7 @@ pip install -r requirements.txt
 - [Adminer](https://www.adminer.org/en/)
 - [pgAdmin](https://www.pgadmin.org/download/pgadmin-4-container/)
 - [phpMyAdmin](https://www.phpmyadmin.net/)
+- [Mongo Express](https://github.com/mongo-express/mongo-express)
 
 
 ## b. apenas online
