@@ -92,7 +92,13 @@ pip install -r requirements.txt
 - [DB Browser for SQLite](https://sqlitebrowser.org/) - ferramenta gráfica para sqlite;
 - [pgAdmin](https://www.pgadmin.org/download/) - ligação a db postgres;
 - [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - para ligação a db mysql/mariadb
-- [SQL DBX](https://www.sqldbx.com/index.htm) - ligação a diferentes bases de dados;
+- [SqlDbx](https://www.sqldbx.com/index.htm) - ligação a diferentes bases de dados;
+
+
+## b. ferramentas web
+- [Adminer](https://www.adminer.org/en/)
+- [pgAdmin](https://www.pgadmin.org/download/pgadmin-4-container/)
+- [phpMyAdmin](https://www.phpmyadmin.net/)
 
 
 ## b. apenas online

@@ -13,7 +13,7 @@ Formação de Fundamentos de SQL (50h)
 * * *
 
 # Preparação do sistema
-Preparação de servidores de bases de dados e ferramentas web de acesso 
+Preparação de servidores de bases de dados e ferramentas acesso 
 - MySQL e Postgres usando [**Docker**](system_prep/README.md)
 - SQL usando [**jupyter notebook**](system_prep/README.md#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-jupyter-notebook)
 - [Outras ferramentas](system_prep/README.md#-ferramentas-para-liga%C3%A7%C3%A3o-a-bases-de-dados)
