@@ -47,6 +47,27 @@ services:
       timeout: 5s
       retries: 3
 
+  oracle:
+    image: gvenzl/oracle-xe
+    container_name: oracle_server
+    restart: unless-stopped
+    ports:
+      - 1521:1521
+      - 8080:8080
+    environment:
+      ORACLE_PWD: ${ORACLE_PWD}
+      TZ: ${TZ}
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - oracle_data:/opt/oracle/oradata
+    networks:
+      - default
+    healthcheck:
+      test: ["CMD", "sqlplus", "-S", "system/${ORACLE_PWD}@//localhost:1521/XEPDB1", "SELECT 1 FROM DUAL;"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
   adminer:
     image: adminer
     container_name: adminer
