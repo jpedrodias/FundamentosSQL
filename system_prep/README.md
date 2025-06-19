@@ -28,8 +28,16 @@ ou copiar apenas os ficheiros: `docker-compose.yml` e `.env`
 ## 2. Inicial docker container
 ```bash
 cd system_prep
+docker compose up
+```
+Para manter os serviços ligados é necessário manter o terminal aberto e parar estes serviços basta pressionar "`Ctrl+C`"
+
+Em alternativa, é possível iniciar os serviços em background adicionando a flag ` -d` desta forma:
+```bash
+cd system_prep
 docker compose up -d
 ```
+E neste caso, para parar estes serviço basta fazer `docker compose down`
 
 
 ## 3. Dados de acesso
