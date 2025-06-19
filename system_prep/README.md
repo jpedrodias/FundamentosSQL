@@ -12,12 +12,13 @@ Neste docker-compose existem dois servidores de base de dados (mysql e postgres)
 - 🐬 **phpMyAdmin**: Focado em MySQL/MariaDB, com uma interface web.
 
 
+---
 Etadas da instalação:
 ## 0. Pré-requisito:
 Ter o docker instalado.
 [Docker Desktop](https://www.docker.com/get-started/)
 
-
+---
 ## 1. Clonar este repositório:
 ```bash
 git clone https://github.com/jpedrodias/FundamentosSQL.git
@@ -25,6 +26,7 @@ cd FundamentosSQL
 ```
 ou copiar apenas os ficheiros: `docker-compose.yml` e `.env` 
 
+---
 ## 2. Inicial docker container
 ```bash
 cd system_prep
@@ -39,7 +41,7 @@ docker compose up -d
 ```
 E neste caso, para parar estes serviço basta fazer `docker compose down`
 
-
+---
 ## 3. Dados de acesso
 3.1) ao servidor `PostgresDB`  
 ```yml
@@ -65,7 +67,7 @@ password: mongo_password
 base de dados: mydatabase
 ```
 
-
+---
 ## 4. Aceder às db via Adminer, pgAdmin ou phpMyAdmin
 - http://localhost:8081 - **Adminer** (para ligação a mysql e postgres)
 - http://localhost:8082 - **pgAdmin** (admin@admin.com | admin) (para ligação apenas postgres)
