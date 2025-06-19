@@ -43,7 +43,7 @@ E neste caso, para parar estes serviço basta fazer `docker compose down`
 
 
 ## 3. Dados de acesso
-3.1) ao servidor `PostgresDB`  
+3.1. ao servidor `PostgresDB`  
 ```yml
 Servidor: postgres
 user: postgres_user
@@ -51,7 +51,7 @@ password: postgres_password
 base de dados: mydatabase
 ```
 
-3.2) ao servidor `MySQL`  
+3.2. ao servidor `MySQL`  
 ```yml
 Servidor: mysql
 user: mysql_user
@@ -59,7 +59,7 @@ password: mysql_password
 base de dados: mydatabase
 ```
 
-3.3) ao servidor `MongoDB`  
+3.3. ao servidor `MongoDB`  
 ```yml
 Servidor: mongo
 user: mongo_user
@@ -91,7 +91,7 @@ docker system prune -a --volumes -f
 ```
 
 
----
+
 ---
 # 📓 Preparação do sistema para correr em Jupyter Notebook
 
@@ -105,19 +105,19 @@ docker system prune -a --volumes -f
 %sql PRAGMA foreign_keys = ON
 ```
 
-## a. Online Jupyter
+## a) Online Jupyter
 - [Google Colab](https://colab.research.google.com/)
 - [Try Jupyter Lab](https://jupyter.org/try-jupyter/lab/)
 
 
-## b. Local Jupyter
+## b) Local Jupyter
 ```bash
 python -m venv C:\TEMP\venvs\FundamentosSQL
 C:\TEMP\venvs\FundamentosSQL\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
----
+
 ---
 # 🧰 Ferramentas para ligação a Bases de Dados
 ## a) aplicações
