@@ -30,7 +30,7 @@ ou copiar apenas os ficheiros: `docker-compose.yml` e `.env`
 cd system_prep
 docker compose up
 ```
-Para manter os serviços ligados é necessário manter o terminal aberto e parar estes serviços basta pressionar "`Ctrl+C`"
+Para manter os serviços ligados é necessário manter o terminal aberto e para parar estes serviços basta pressionar "`Ctrl+C`"
 
 Em alternativa, é possível iniciar os serviços em background adicionando a flag ` -d` desta forma:
 ```bash
