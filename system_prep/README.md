@@ -68,7 +68,6 @@ base de dados: mydatabase
 ```
 
 
-
 ## 4. Aceder às db via Adminer, pgAdmin ou phpMyAdmin
 - http://localhost:8081 - **Adminer** (para ligação a mysql e postgres)
 - http://localhost:8082 - **pgAdmin** (admin@admin.com | admin) (para ligação apenas postgres)
@@ -124,3 +123,20 @@ pip install -r requirements.txt
 
 ## b. apenas online
 - [SandboxSQL](https://sandboxsql.com/)
+
+
+
+---
+# 🧹 Limpeza completa do `cache` Docker
+Para além do download das imagens, o docker cria volumes que podem ocupar algum espaço em disco. 
+Usar as instruções seguintes com ponderação, pois poderá resultar na eliminação de mais do que deseja ou precisa. 
+
+```bash
+docker compose down
+docker stop $(docker ps -aq)
+docker rm $(docker ps -aq)
+docker rmi $(docker images -q) -f
+docker volume rm $(docker volume ls -q)
+docker network prune -f
+docker system prune -a --volumes -f
+```
