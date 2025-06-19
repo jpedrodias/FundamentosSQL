@@ -81,7 +81,7 @@ base de dados: mydatabase
 
 ## a. Online Jupyter
 - [Google Colab](https://colab.research.google.com/)
-- [Jupyter](https://jupyter.org/try-jupyter/lab/)
+- [Try Jupyter Lab](https://jupyter.org/try-jupyter/lab/)
 
 
 ## b. Local Jupyter
