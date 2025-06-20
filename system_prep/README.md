@@ -20,8 +20,8 @@ Ter o docker e Git instalado.
 
 ```bash
 winget update
-winget -e --id Git.Git
-winget -e --id Docker.DockerDesktop
+winget install -e --id Git.Git
+winget install -e --id Docker.DockerDesktop
 ```
 
 
