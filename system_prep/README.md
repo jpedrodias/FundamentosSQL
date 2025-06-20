@@ -13,10 +13,16 @@ Neste docker-compose existem dois servidores de base de dados (mysql e postgres)
 
 
 ---
-Etadas da instalação:
+Etapas da instalação:
 ## 0. Pré-requisito:
-Ter o docker instalado.
-[Docker Desktop](https://www.docker.com/get-started/)
+Ter o docker e Git instalado.
+- [Docker Desktop](https://www.docker.com/get-started/)
+
+```bash
+winget update
+winget -e --id Git.Git
+winget -e --id Docker.DockerDesktop
+```
 
 
 ## 1. Clonar este repositório:
