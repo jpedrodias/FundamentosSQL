@@ -150,8 +150,8 @@ services:
 
 
 volumes:
-  postgres_data:   # Servidor 1: PostgreSQL
-  mysql_data:      # Servidor 2: MySQL
+  mysql_data:      # Servidor 1: MySQL
+  postgres_data:   # Servidor 2: PostgreSQL
   mongodb_data:    # Servidor 3: MongoDB
   mongodb_config:  # MongoDB Configurations
   pgadmin_data:    # Web Interfaces for Databases: pgAdmin

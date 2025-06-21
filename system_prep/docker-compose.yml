@@ -26,7 +26,7 @@ services:
       timeout: 5s
       retries: 3
 
-  # Web Interfaces for Databases: vários
+  # Web Interface for Database: vários
   adminer:
     image: adminer
     container_name: adminer
@@ -40,7 +40,7 @@ services:
     networks:
       - default
 
-  # Web Interfaces for Databases: MySQL
+  # Web Interface for Database: MySQL
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin
