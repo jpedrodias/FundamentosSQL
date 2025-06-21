@@ -1,23 +1,31 @@
+<h1 style='font-size:2em;'>Preparação do sistema</h1>
+
+
 # 🐳 Preparação do sistema para correr em Docker:
 Neste docker-compose existem dois servidores de base de dados (mysql e postgres) e três serviços para aceder via web a esses servidores.
 
 **Servidores** - Sistemas de Gerenciamento de Banco de Dados (SGBD):
 - 🐬 **MySQL**	- SGBD Relacional (RDBMS);
 - 🐘 **PostgreSQL** - SGBD Relacional Avançado (ORDBMS)
+- 🍃 **MongoDB** — SGBD NoSQL orientado a documentos (Document Store)
 
 
 **Ferramentas de acesso via Web** - Ferramentas de Administração de Banco de Dados:
+- 🐬 **phpMyAdmin**: Focado em MySQL/MariaDB, com uma interface web;
 - 🛠️ **Adminer**: Suporta vários SGBDs via uma única interface PHP leve;
 - 🐘 **pgAdmin**: Ferramenta oficial de administração para PostgreSQL;
-- 🐬 **phpMyAdmin**: Focado em MySQL/MariaDB, com uma interface web.
+- 🍃 **Mongo Express**: Interface web leve para administração do MongoDB.
 
 
 ---
-Etapas da instalação:
-## 0. Pré-requisito:
-Ter o docker e Git instalado.
-- [Docker Desktop](https://www.docker.com/get-started/)
+# 🛠️ Etapas da instalação:
+## 0️⃣ Pré-requisito:
+Ter o *Git* e o *Docker Desktop* instalado:
+- 🐳 [Git](https://git-scm.com/downloads)
+- 🐙 [Docker Desktop](https://www.docker.com/get-started/)
 
+
+Ou em alternativa, fazer a instalação usando `winget` (em Windows)
 ```bash
 winget update
 winget install -e --id Git.Git
@@ -25,15 +33,15 @@ winget install -e --id Docker.DockerDesktop
 ```
 
 
-## 1. Clonar este repositório:
+## 1️⃣ Clonar este repositório:
 ```bash
 git clone https://github.com/jpedrodias/FundamentosSQL.git
 cd FundamentosSQL
 ```
-ou copiar apenas o ficheiro `docker-compose.yml` (ou `docker-compose-extra.yml`) e `.env` com as variáveis de ambiente. 
+ou copiar apenas o ficheiro `docker-compose.yml` (ou `docker-compose-extra.yml`) e o ficheiro `.env` com a definção das variáveis de ambiente. 
 
 
-## 2. Inicial docker container
+## 2️⃣ Inicial docker container
 ```bash
 cd system_prep
 docker compose up
@@ -53,7 +61,7 @@ E neste caso, para parar estes serviço basta fazer `docker compose down`
 basta utilizar o comando `docker compose -f docker-compose-extra.yml up`.
 
 
-## 3. Dados de acesso
+## 3️⃣ Dados de acesso
 3.1. ao servidor `PostgresDB`  
 ```yml
 Servidor: postgres
@@ -79,7 +87,7 @@ base de dados: mydatabase
 ```
 
 
-## 4. Aceder às db via Adminer, pgAdmin ou phpMyAdmin
+## 4️⃣ Aceder às db via Adminer, pgAdmin ou phpMyAdmin
 - http://localhost:8081 - **Adminer** (para ligação a mysql e postgres)
 - http://localhost:8082 - **phpMyAdmin** (apenas mysql/mariadb)
 - http://localhost:8083 - **pgAdmin** (admin@admin.com | admin) (para ligação apenas postgres)
@@ -87,7 +95,7 @@ base de dados: mydatabase
 
 
 
-## 5. 🧹 Limpeza completa do `cache` Docker
+## 5️⃣ 🧹 Limpeza completa do `cache` Docker
 Para além do download das imagens, o docker cria volumes que podem ocupar algum espaço em disco. 
 Usar as instruções seguintes com ponderação, pois poderá resultar na eliminação de mais do que deseja ou precisa. 
 
