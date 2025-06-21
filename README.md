@@ -1,5 +1,5 @@
 # Fundamentos de SQL
-Formação de Fundamentos de SQL (50h)
+Formação de Fundamentos de SQL (25h)
 
 > Entidade Formadora: [EISnt](https://eisnt.com/)
 >
