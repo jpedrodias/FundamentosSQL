@@ -36,7 +36,7 @@ ou copiar apenas o ficheiro `docker-compose.yml` (ou `docker-compose-extra.yml`)
 ## 2. Inicial docker container
 ```bash
 cd system_prep
-docker compose up -f docker-compose-extra
+docker compose up
 ```
 Para manter os serviços ligados é necessário manter o terminal aberto e para parar estes serviços basta pressionar "`Ctrl+C`"
 
@@ -47,7 +47,10 @@ docker compose up -d
 ```
 E neste caso, para parar estes serviço basta fazer `docker compose down`
 
-Para correr uma versão com apenas um serviço, basta modificar o ficheiro `docker-compose.yml` e correr o serviço com `docker-compose up`.
+
+**Extra**:
+* Para correr uma versão com apenas mais serviços (mysql, postgres e mongodb), 
+basta utilizar o comando `docker compose -f docker-compose-extra.yml up`.
 
 
 ## 3. Dados de acesso
