@@ -1,4 +1,4 @@
-# docker-compose file for mysql, adminer and phpmyadmin
+# docker-compose com servidor mysql e dois web interfaces: adminer e phpmyadmin
 name: FundamentosSQL
 
 services:
