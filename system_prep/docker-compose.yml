@@ -2,7 +2,7 @@
 name: FundamentosSQL
 
 services:
-  # Servidor 2: MySQL Configuration
+  # Servidor 1: MySQL Configuration
   mysql:
     image: mysql:latest
     container_name: mysql_server
@@ -46,7 +46,7 @@ services:
     container_name: phpmyadmin
     restart: always
     ports:
-      - 8083:80
+      - 8082:80
     volumes:
       - /etc/localtime:/etc/localtime:ro
     environment:
@@ -62,7 +62,7 @@ services:
 
 
 volumes:
-  mysql_data:    # Servidor 2: MySQL
+  mysql_data:    # Servidor 1: MySQL
 
 
 networks:
