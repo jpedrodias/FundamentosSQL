@@ -119,9 +119,12 @@ docker system prune -a --volumes -f
 # 📓 Preparação do sistema para correr em Jupyter Notebook
 O `JupySQL` permite executar comandos SQL e criar gráficos de grandes conjuntos de dados no Jupyter através das magias %sql, %%sql e %sqlplot. O JupySQL é compatível com todos os principais bancos de dados (por exemplo, PostgreSQL, MySQL, SQL Server), data warehouses (como Snowflake, BigQuery, Redshift) e motores embarcados (SQLite e DuckDB).
 
+[ver JupySQL](https://jupysql.ploomber.io/en/latest/quick-start.html)
+
 
 ```python
-!pip install jupysql sqlite3
+!pip install ipykernel jupyterlab jupysql --upgrade --no-cache-dir
+!pip cache purge
 
 %load_ext sql
 %sql sqlite:///database.sqlite
@@ -139,7 +142,8 @@ O `JupySQL` permite executar comandos SQL e criar gráficos de grandes conjuntos
 ```bash
 python -m venv C:\TEMP\venvs\FundamentosSQL
 C:\TEMP\venvs\FundamentosSQL\Scripts\Activate.ps1
-pip install -r requirements.txt
+pip install -r requirements.txt --no-cache-dir
+pip cache purge
 ```
 
 
