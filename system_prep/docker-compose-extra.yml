@@ -1,5 +1,4 @@
-# docker-compose file for mysql, postgres and mongodb
-# and adminer, phpmyadmin, pgAdmin and mongo-express
+# docker-compose com 3 servidores: mysql, postgres e mongodb e ferramentas web interface: adminer, phpmyadmin, pgAdmin e mongo-express
 name: FundamentosSQL
 
 services:
