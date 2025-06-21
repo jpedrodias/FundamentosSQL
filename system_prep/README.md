@@ -1,4 +1,4 @@
-<h1 style='font-size:2em;'>Preparação do sistema</h1>
+<h1 style='font-size:3em;'>Preparação do sistema</h1>
 
 
 # 🐳 Preparação do sistema para correr em Docker:
