@@ -30,13 +30,13 @@ winget install -e --id Docker.DockerDesktop
 git clone https://github.com/jpedrodias/FundamentosSQL.git
 cd FundamentosSQL
 ```
-ou copiar apenas os ficheiros: `docker-compose.yml` e `.env` 
+ou copiar apenas o ficheiro `docker-compose.yml` (ou `docker-compose-extra.yml`) e `.env` com as variáveis de ambiente. 
 
 
 ## 2. Inicial docker container
 ```bash
 cd system_prep
-docker compose up
+docker compose up -f docker-compose-extra
 ```
 Para manter os serviços ligados é necessário manter o terminal aberto e para parar estes serviços basta pressionar "`Ctrl+C`"
 
@@ -46,6 +46,8 @@ cd system_prep
 docker compose up -d
 ```
 E neste caso, para parar estes serviço basta fazer `docker compose down`
+
+Para correr uma versão com apenas um serviço, basta modificar o ficheiro `docker-compose.yml` e correr o serviço com `docker-compose up`.
 
 
 ## 3. Dados de acesso
