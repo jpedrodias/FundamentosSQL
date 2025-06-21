@@ -1,5 +1,6 @@
-# docker-compose file for PostgreSQL, Adminer, and pgAdmin
-name: FundamentosSQL-BIG
+# docker-compose file for 3 servers (mysql, postgres and mongodb) 
+# and web services (phpmyadmin, Adminer, pgAdmin and mongo-express)
+name: FundamentosSQL-Extra
 
 services:
   # Servidor 1: MySQL Configuration
