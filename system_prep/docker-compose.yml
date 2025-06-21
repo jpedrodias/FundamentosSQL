@@ -34,7 +34,7 @@ services:
     ports:
       - 8081:8080
     depends_on:
-      - postgres
+      - mysql
     volumes:
       - /etc/localtime:/etc/localtime:ro
     networks:
