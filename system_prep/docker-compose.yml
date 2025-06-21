@@ -62,7 +62,7 @@ services:
 
 
 volumes:
-  mysql_data:    # Servidor 1: MySQL
+  mysql_data:      # Servidor 1: MySQL
 
 
 networks:
