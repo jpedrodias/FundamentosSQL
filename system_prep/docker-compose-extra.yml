@@ -72,7 +72,7 @@ services:
       timeout: 5s
       retries: 5
 
-  # Web Interfaces for Databases: vários
+  # Web Interface for Database: vários
   adminer:
     image: adminer
     container_name: adminer
@@ -86,7 +86,7 @@ services:
     networks:
       - default
 
-  # Web Interfaces for Databases: MySQL
+  # Web Interface for Database: MySQL
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin
@@ -106,7 +106,7 @@ services:
     networks:
       - default
 
-  # Web Interfaces for Databases: postgres
+  # Web Interface for Database: postgres
   pgadmin:
     image: dpage/pgadmin4
     container_name: pgadmin
@@ -126,7 +126,7 @@ services:
     networks:
       - default
 
-  # Web Interfaces for Databases: MongoDB
+  # Web Interface for Database: MongoDB
   mongo-express:
     image: mongo-express:latest
     container_name: mongo_express
@@ -150,11 +150,11 @@ services:
 
 
 volumes:
-  postgres_data: # Servidor 1: PostgreSQL
-  mysql_data:    # Servidor 2: MySQL
-  mongodb_data:  # Servidor 3: MongoDB
-  mongodb_config: # MongoDB Configurations
-  pgadmin_data:  # Web Interfaces for Databases: pgAdmin
+  postgres_data:   # Servidor 1: PostgreSQL
+  mysql_data:      # Servidor 2: MySQL
+  mongodb_data:    # Servidor 3: MongoDB
+  mongodb_config:  # MongoDB Configurations
+  pgadmin_data:    # Web Interfaces for Databases: pgAdmin
 
 
 networks:
