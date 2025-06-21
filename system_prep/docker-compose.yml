@@ -1,4 +1,4 @@
-# docker-compose file for PostgreSQL, Adminer, and pgAdmin
+# docker-compose file for mysql, adminer and phpmyadmin
 name: FundamentosSQL
 
 services:
