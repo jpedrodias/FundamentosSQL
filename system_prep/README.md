@@ -66,19 +66,20 @@ basta utilizar o comando `docker compose -f docker-compose-extra.yml up`.
 
 
 ## 3. Dados de acesso
+
+3.1. ao servidor `MySQL`  
+```yml
+Servidor: mysql
+user: mysql_user
+password: mysql_password
+base de dados: mydatabase
+```
+
 3.1. ao servidor `PostgresDB`  
 ```yml
 Servidor: postgres
 user: postgres_user
 password: postgres_password
-base de dados: mydatabase
-```
-
-3.2. ao servidor `MySQL`  
-```yml
-Servidor: mysql
-user: mysql_user
-password: mysql_password
 base de dados: mydatabase
 ```
 
@@ -142,7 +143,7 @@ O `JupySQL` permite executar comandos SQL e criar gráficos de grandes conjuntos
 ```bash
 python -m venv C:\TEMP\venvs\FundamentosSQL
 C:\TEMP\venvs\FundamentosSQL\Scripts\Activate.ps1
-pip install -r requirements.txt --no-cache-dir
+pip install -r requirements.txt --upgrade --no-cache-dir
 pip cache purge
 ```
 
