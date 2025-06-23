@@ -2,3 +2,4 @@ ipython
 jupyterlab
 jupysql
 mysqlclient
+psycopg2-binary
