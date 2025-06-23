@@ -57,7 +57,7 @@ Em alternativa, é possível iniciar os serviços em background adicionando a fl
 cd system_prep
 docker compose up -d
 ```
-E neste caso, para parar estes serviço basta fazer `docker compose down`
+E neste caso, para parar estes serviço que ficaram a correr em background basta fazer `docker compose down` ou fazer stop dentro do Docker Desktop.
 
 
 **Extra**:
