@@ -96,10 +96,10 @@ base de dados: mydatabase
 
 
 ## 4. Aceder às bases de dados via clientes web (sem instalações adicionais)
-- http://localhost:8081 - **Adminer** (para ligação a mysql e postgres)
-- http://localhost:8082 - **phpMyAdmin** (apenas mysql/mariadb)
-- http://localhost:8083 - **pgAdmin** (admin@admin.com | admin) (para ligação apenas postgres)
-- http://localhost:8084 - **Mongo Express** (admin | pass) (apenas MongoDB)
+- http://localhost:8081 - **Adminer** é uma ferramenta para ligação ao servidor mysql e postgres;
+- http://localhost:8082 - **phpMyAdmin** é uma ferramanta par aligação ao servidor mysql e mariadb;
+- http://localhost:8083 - **pgAdmin** (user: admin@admin.com | pass: admin) é uma ferramenta para ligação ao servidor postgres;
+- http://localhost:8084 - **Mongo Express** (user: admin | pass: pass) é uma ferramenta para ligação ao servidor MongoDB.
 
 
 
