@@ -147,6 +147,14 @@ pip install -r requirements.txt --upgrade --no-cache-dir
 pip cache purge
 ```
 
+## c) Correr Jupyter Localmente em macOS/Linux
+```bash
+python3 -m venv /tmp/FundamentosSQL
+source /tmp/FundamentosSQL/bin/activate
+pip install -r requirements.txt --upgrade --no-cache-dir
+pip cache purge
+```
+
 
 ---
 # 🧰 Ferramentas para ligação a Bases de Dados
