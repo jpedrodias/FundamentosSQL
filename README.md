@@ -30,3 +30,7 @@ Preparação de servidores de bases de dados e ferramentas acesso
 **Livros**
 * [SQL](https://www.wook.pt/livro/sql-structured-query-language-luis-damas/19619695) (em português e em papel)
 * [Introduction to SQL](https://github.com/bobbyiliev/introduction-to-sql) (open source - em inglês)
+
+
+**Outros**
+* [Criação random de dados](https://mockaroo.com/)
