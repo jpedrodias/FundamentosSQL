@@ -144,7 +144,7 @@ O `JupySQL` permite executar comandos SQL e criar gráficos de grandes conjuntos
 - [Try Jupyter Lab](https://jupyter.org/try-jupyter/lab/)
 
 
-## b) Correr Jupyter Localmente (em windows)
+## b) Correr Jupyter Localmente em windows
 ```bash
 python -m venv C:\TEMP\venvs\FundamentosSQL
 C:\TEMP\venvs\FundamentosSQL\Scripts\Activate.ps1
