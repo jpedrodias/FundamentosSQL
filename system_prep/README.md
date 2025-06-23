@@ -6,7 +6,7 @@
 ---
 
 # 🐳 Preparação do sistema para correr em Docker:
-Neste docker-compose existem três servidores de base de dados (mysql, postgres e mongodb) e quatro serviços para aceder via web a esses servidores.
+Neste docker-compose existem três servidores de base de dados (mysql, postgres e mongodb) e quatro ferramentas web para aceder a esses servidores.
 
 **Servidores** - Sistemas de Gerenciamento de Banco de Dados (SGBD):
 - 🐬 **MySQL**	- SGBD Relacional (RDBMS);
