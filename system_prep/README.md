@@ -104,9 +104,8 @@ base de dados: mydatabase
 
 
 ## 5. 🧹 Limpeza completa do `cache` Docker
-Para além do download das imagens, o docker cria volumes que podem ocupar algum espaço em disco. 
-Usar as instruções seguintes com ponderação, pois poderá resultar na eliminação de mais do que deseja ou precisa. 
-
+Apesar de não ter uma "pegada" tão grande com de uma máquina virtual, o Docker é um sistema de virtualização e para além do download das imagens, o docker cria volumes que podem ocupar algum espaço em disco.
+Nem sempre o Docker Desktop mostra a totalidade do cache utilizado e por isso, para uma limpeza completa do cache do docker, basta fazer:
 ```bash
 docker compose down
 docker stop $(docker ps -aq)
@@ -116,6 +115,9 @@ docker volume rm $(docker volume ls -q)
 docker network prune -f
 docker system prune -a --volumes -f
 ```
+
+PS: Os `volumes` docker são os espaços onde estão guardados os dados das bases de dados.
+Usar estas instruções com ponderação, pois poderá resultar na eliminação de mais do que deseja ou precisa. 
 
 
 
