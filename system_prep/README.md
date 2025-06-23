@@ -65,7 +65,7 @@ E neste caso, para parar estes serviço basta fazer `docker compose down`
 basta utilizar o comando `docker compose -f docker-compose-extra.yml up`.
 
 
-## 3. Dados de acesso
+## 3. Dados de acesso:
 
 3.1. ao servidor `MySQL`  
 ```yml
