@@ -134,12 +134,12 @@ O `JupySQL` permite executar comandos SQL e criar gráficos de grandes conjuntos
 %sql PRAGMA foreign_keys = ON
 ```
 
-## a) Online Jupyter
+## a) Correr Jupyter Online
 - [Google Colab](https://colab.research.google.com/)
 - [Try Jupyter Lab](https://jupyter.org/try-jupyter/lab/)
 
 
-## b) Local Jupyter
+## b) Correr Jupyter Localmente (em windows)
 ```bash
 python -m venv C:\TEMP\venvs\FundamentosSQL
 C:\TEMP\venvs\FundamentosSQL\Scripts\Activate.ps1
