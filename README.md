@@ -27,8 +27,9 @@ Preparação de servidores de bases de dados e ferramentas acesso
 * [CS50's Introduction to Databases with SQL](https://www.youtube.com/playlist?list=PLhQjrBD2T382v1MBjNOhPu9SiJ1fsD4C0)
 
 
-**Livros**
+**Tutoriais ou manuais**
 * [SQL](https://www.wook.pt/livro/sql-structured-query-language-luis-damas/19619695) (em português e em papel)
+* [w3school/sql](https://www.w3schools.com/sql/default.asp) - SQL Tutorial online com exercícios
 * [Introduction to SQL](https://github.com/bobbyiliev/introduction-to-sql) (open source - em inglês)
 
 
