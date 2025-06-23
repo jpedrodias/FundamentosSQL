@@ -33,4 +33,6 @@ Preparação de servidores de bases de dados e ferramentas acesso
 
 
 **Outros**
-* [Criação random de dados](https://mockaroo.com/)
+* [mockarro](https://mockaroo.com/) - Criação dados aleatórios
+* [dbdiagram.io](https://dbdiagram.io) - Desenho de ERD (Entity-Relationship Diagrams)
+* [draw.io](https://draw.io) - Desenho de ERD (Entity-Relationship Diagrams)
