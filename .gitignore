@@ -6,3 +6,4 @@ privado/
 *.env_postgres_production
 *.log
 .venv/
+venv/
