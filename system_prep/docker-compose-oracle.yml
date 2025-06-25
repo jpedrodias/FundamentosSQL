@@ -20,6 +20,20 @@ services:
     networks:
       - default
 
+  # Web Interface for Database: vários
+  adminer:
+    image: adminer:latest
+    container_name: adminer
+    restart: unless-stopped
+    ports:
+      - 8081:8080
+    depends_on:
+      - postgres
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    networks:
+      - default
+      
 volumes:
   oracle_data:
 
