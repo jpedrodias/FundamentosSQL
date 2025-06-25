@@ -29,6 +29,7 @@ Preparação de servidores de bases de dados e ferramentas acesso
 
 **Tutoriais ou manuais:**
 * [SQL](https://www.wook.pt/livro/sql-structured-query-language-luis-damas/19619695) (em português e em papel)
+* [SQL Tutorial](https://www.sqltutorial.org/)
 * [w3school/sql](https://www.w3schools.com/sql/default.asp) - SQL Tutorial online com exercícios
 * [Introduction to SQL](https://github.com/bobbyiliev/introduction-to-sql) (open source - em inglês)
 
