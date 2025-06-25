@@ -1,0 +1,23 @@
+# docker-compose-oracle - AINDA NÃO TESTADO
+name: FundamentosSQL
+
+services:
+  oracle:
+    image: gvenzl/oracle-xe # MAIS DE 3GB!!
+    container_name: oracle_xe
+    ports:
+      - 1521:1521
+    environment:
+      ORACLE_PASSWORD: mypassword
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+    networks:
+      - default
+
+volumes:
+  oracle_data:
+
+networks:
+  default:
+    name: FundamentosSQL-network
+    driver: bridge
