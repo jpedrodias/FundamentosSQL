@@ -55,7 +55,7 @@ docker compose up
 ```
 Para manter os serviços ligados é necessário manter o terminal aberto e para parar estes serviços basta pressionar `Ctrl+C`
 
-Em alternativa, é possível iniciar os serviços em background adicionando a flag ` -d` desta forma:
+Em alternativa, é possível iniciar os serviços em background adicionando a flag ` -d` (detached mode) desta forma:
 ```bash
 cd system_prep
 docker compose up -d
