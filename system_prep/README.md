@@ -70,6 +70,11 @@ E neste caso, para parar estes serviço que ficaram a correr em background basta
 docker compose -f docker-compose-extra.yml up
 ```
 
+- Para correr a ver~so sem licença da base de dados da oracle, usar o comando:
+```bash
+docker compose -f docker-compose-oracle.yml up
+```
+
 
 ## 3. Dados de acesso:
 
