@@ -137,7 +137,7 @@ O `JupySQL` permite executar comandos SQL e criar gráficos de grandes conjuntos
 %load_ext sql
 %sql sqlite:///database.sqlite
 
-%config SqlMagic.displaylimit = None
+%config SqlMagic.displaylimit = 0
 %sql PRAGMA foreign_keys = ON
 ```
 
