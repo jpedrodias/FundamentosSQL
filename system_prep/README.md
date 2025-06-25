@@ -6,7 +6,10 @@
 ---
 
 # 🐳 Preparação do sistema para correr em Docker:
-Neste docker-compose existem três servidores de base de dados (mysql, postgres e mongodb) e quatro ferramentas web para aceder a esses servidores.
+* No `docker-compose.yml`existe um servidor de base de dados (mysql) e duas ferramentas web para acesso a esse servidor.
+* No `docker-compose-extra.yml` existem três servidores de base de dados (mysql, postgres e mongodb) e quatro ferramentas web para aceder a esses servidores.
+* Ainda não testado, o `docker-compose-oracle.yml` - desvantagem: mais de 3Gb...
+
 
 **Servidores** - Sistemas de Gerenciamento de Banco de Dados (SGBD):
 - 🐬 **MySQL**	- SGBD Relacional (RDBMS);
