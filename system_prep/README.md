@@ -64,8 +64,7 @@ E neste caso, para parar estes serviço que ficaram a correr em background basta
 
 
 **Extra**:
-- Para correr uma versão com apenas mais serviços (mysql, postgres e mongodb), 
-basta utilizar o comando:
+- Para correr a versão mais completa, com mais serviços (mysql, postgres e mongodb), basta utilizar o comando:
 ```bash
 docker compose -f docker-compose-extra.yml up
 ```
