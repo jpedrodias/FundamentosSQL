@@ -1,4 +1,6 @@
-# docker-compose-oracle - AINDA NÃO TESTADO 
+# docker-compose-oracle -Testado parcialmente
+# https://hub.docker.com/r/gvenzl/oracle-xe
+
 name: FundamentosSQL
 
 services:
@@ -8,7 +10,11 @@ services:
     ports:
       - 1521:1521
     environment:
-      ORACLE_PASSWORD: mypassword
+      # Database Admin User: system
+      ORACLE_PASSWORD: oracle_password
+      ORACLE_DATABASE: mydatabase #XEPDB1 # DEFAULT
+      APP_USER: oracle_user
+      APP_USER_PASSWORD: oracle_password
     volumes:
       - oracle_data:/opt/oracle/oradata
     networks:
