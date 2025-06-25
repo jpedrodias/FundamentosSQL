@@ -1,14 +1,14 @@
 # Preparação do sistema:
-* [Docker](#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-docker)
-* [Jupyter](#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-jupyter-notebook)
-* [Outras ferramentas](#-ferramentas-para-liga%C3%A7%C3%A3o-a-bases-de-dados)
+- [Docker](#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-docker)
+- [Jupyter](#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-jupyter-notebook)
+- [Outras ferramentas](#-ferramentas-para-liga%C3%A7%C3%A3o-a-bases-de-dados)
 
 ---
 
 # 🐳 Preparação do sistema para correr em Docker:
-* No `docker-compose.yml`existe um servidor de base de dados (mysql) e duas ferramentas web para acesso a esse servidor.
-* No `docker-compose-extra.yml` existem três servidores de base de dados (mysql, postgres e mongodb) e quatro ferramentas web para aceder a esses servidores.
-* Ainda não testado, o `docker-compose-oracle.yml` - desvantagem: mais de 3Gb...
+- No `docker-compose.yml`existe um servidor de base de dados (mysql) e duas ferramentas web para acesso a esse servidor.
+- No `docker-compose-extra.yml` existem três servidores de base de dados (mysql, postgres e mongodb) e quatro ferramentas web para aceder a esses servidores.
+- Ainda não testado, o `docker-compose-oracle.yml` - desvantagem: mais de 3Gb...
 
 
 **Servidores** - Sistemas de Gerenciamento de Banco de Dados (SGBD):
@@ -18,8 +18,8 @@
 
 
 **Ferramentas de acesso via Web** - Ferramentas de Administração de Banco de Dados:
-- 🐬 **phpMyAdmin**: Focado em MySQL/MariaDB, com uma interface web;
 - 🛠️ **Adminer**: Suporta vários SGBDs via uma única interface PHP leve;
+- 🐬 **phpMyAdmin**: Focado em MySQL/MariaDB, com uma interface web;
 - 🐘 **pgAdmin**: Ferramenta oficial de administração para PostgreSQL;
 - 🍃 **Mongo Express**: Interface web leve para administração do MongoDB.
 
@@ -64,7 +64,7 @@ E neste caso, para parar estes serviço que ficaram a correr em background basta
 
 
 **Extra**:
-* Para correr uma versão com apenas mais serviços (mysql, postgres e mongodb), 
+- Para correr uma versão com apenas mais serviços (mysql, postgres e mongodb), 
 basta utilizar o comando:
 ```bash
 docker compose -f docker-compose-extra.yml up
