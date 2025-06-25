@@ -97,6 +97,14 @@ password: mongo_password
 base de dados: mydatabase
 ```
 
+3.4. ao servidor `OracleDB CE`  
+```yml
+Servidor: oracle
+user: system
+password: oracle_password
+base de dados: mydatabase
+```
+
 
 ## 4. Aceder às bases de dados via clientes web (sem instalações adicionais)
 - http://localhost:8081 - **Adminer** é uma ferramenta para ligação ao servidor mysql e postgres;
