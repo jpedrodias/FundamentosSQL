@@ -74,7 +74,7 @@ services:
 
   # Web Interface for Database: vários
   adminer:
-    image: adminer
+    image: adminer:latest
     container_name: adminer
     restart: unless-stopped
     ports:
@@ -88,7 +88,7 @@ services:
 
   # Web Interface for Database: MySQL
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    image: phpmyadmin/phpmyadmin:latest
     container_name: phpmyadmin
     restart: always
     ports:
@@ -108,7 +108,7 @@ services:
 
   # Web Interface for Database: postgres
   pgadmin:
-    image: dpage/pgadmin4
+    image: dpage/pgadmin4:latest
     container_name: pgadmin
     restart: unless-stopped
     ports:
