@@ -167,7 +167,7 @@ pip cache purge
 ---
 # 🧰 Ferramentas para ligação a Bases de Dados
 ## a) aplicações
-- [DBveaver](https://dbeaver.io/download/) - ligação a diferentes bases de dados;
+- [DBveaver](https://dbeaver.io/download/) - ligação a diferentes bases de dados (sqlite, mysql, postgres, mongodb, oracle, etc);
 - [sqlite3](https://www.sqlite.org/download.html) - ferramenta de linha de comandos para ligar a sqlite;
 - [DB Browser for SQLite](https://sqlitebrowser.org/) - ferramenta gráfica para sqlite;
 - [pgAdmin](https://www.pgadmin.org/download/) - ligação a db postgres;
