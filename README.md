@@ -12,22 +12,23 @@ Formação de Fundamentos de SQL (25h)
 
 * * *
 
-# Preparação do sistema
+# Preparação do sistema:
 Preparação de servidores de bases de dados e ferramentas de acesso 
 - MySQL, Postgres, OracleDB e MongoDB usando [**Docker**](system_prep/README.md#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-docker)
 - SQL usando [**jupyter notebook**](system_prep/README.md#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-jupyter-notebook)
+- OracleDB usando [Máquina virtual](system_prep/README.md#%EF%B8%8F-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-m%C3%A1quina-virtual)
 - [Outras ferramentas](system_prep/README.md#-ferramentas-para-liga%C3%A7%C3%A3o-a-bases-de-dados)
 
 
 
 * * *
-# Materiais Extra
+# Materiais Extra:
 
-**Tutoriais Vídeo:**
+**Tutoriais Vídeo**
 * [CS50's Introduction to Databases with SQL](https://www.youtube.com/playlist?list=PLhQjrBD2T382v1MBjNOhPu9SiJ1fsD4C0)
 
 
-**Tutoriais ou manuais:**
+**Tutoriais ou manuais**
 * [SQL](https://www.wook.pt/livro/sql-structured-query-language-luis-damas/19619695) (livro em português e em papel)
 * [SQL Tutorial](https://www.sqltutorial.org/) - SQL Tutorial e com `Cheat Sheet` (em inglês)
 * [w3school/sql](https://www.w3schools.com/sql/default.asp) - SQL Tutorial online com exercícios (em inglês)
