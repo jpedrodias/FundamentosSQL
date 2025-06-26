@@ -187,14 +187,14 @@ pip cache purge
 # 🖥️ Preparação do sistema para correr em máquina virtual:
 - [Oracle Database Free VirtualBox Appliance](https://www.oracle.com/database/technologies/databaseappdev-vm.html) (da Oracle)
     - user: ???, password: ???
-- [Máquinal Virtual "Mint" com base de dados MySql e Postgress](https://drive.google.com/file/d/15cBQOABUNHihoPV5I7NGLIcFw-IkJ3k7/view) (do formador)
+- [Máquinal Virtual "Mint" com base de dados MySql e Postgress](https://drive.google.com/file/d/15cBQOABUNHihoPV5I7NGLIcFw-IkJ3k7/view)
     - user: osboxes.org, password: osboxes.org
     - fazer/forçar atualizações:
     ```bash
     sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt dist-upgrade -y
     sudo apt autoclean -y && sudo apt autoremove -y
     ```
-    - concertar falhas na atualização:
+    - consertar falhas na atualização:
     ```bash
     sudo apt -fix-missing install
     ```
