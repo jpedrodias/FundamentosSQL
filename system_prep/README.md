@@ -5,6 +5,7 @@
 - [Outras ferramentas](#-ferramentas-para-liga%C3%A7%C3%A3o-a-bases-de-dados)
 
 
+
 ---
 
 # 🐳 Preparação do sistema para correr em Docker:
@@ -120,7 +121,6 @@ base de dados: mydatabase
 - http://localhost:8084 - **Mongo Express** (user: admin | pass: pass) é uma ferramenta para ligação ao servidor MongoDB.
 
 
-
 ## 5. 🧹 Limpeza completa do `cache` Docker
 Apesar de não ter uma "pegada" tão grande com de uma máquina virtual, o Docker é um sistema de virtualização e para além do download das imagens, o docker cria volumes que podem ocupar algum espaço em disco.
 Nem sempre o Docker Desktop mostra a totalidade do cache utilizado e por isso, para uma limpeza completa do cache do docker, basta fazer:
@@ -170,6 +170,7 @@ pip install -r requirements.txt --upgrade --no-cache-dir
 pip cache purge
 ```
 
+
 ## c) Correr Jupyter Localmente em macOS/Linux
 ```bash
 python3 -m venv /tmp/FundamentosSQL
@@ -177,6 +178,7 @@ source /tmp/FundamentosSQL/bin/activate
 pip install -r requirements.txt --upgrade --no-cache-dir
 pip cache purge
 ```
+
 
 
 ---
