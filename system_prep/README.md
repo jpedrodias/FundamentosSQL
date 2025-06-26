@@ -189,6 +189,14 @@ pip cache purge
     - user: ???, password: ???
 - [Máquinal Virtual "Mint" com base de dados MySql](https://drive.google.com/file/d/15cBQOABUNHihoPV5I7NGLIcFw-IkJ3k7/view) (do formador)
     - user: osboxes.org, password: osboxes.org
+    - fazer/forçar atualizações:
+    ```bash
+    sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y
+    ```
+    - concertar falhas na atualização:
+    ```bash
+    sudo apt -fix-missing install
+    ```
 
 (dados de login e forma de acesso - a verificar)
 
