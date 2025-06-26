@@ -29,6 +29,7 @@
 
 
 ---
+
 # 🛠️ Etapas da instalação:
 ## 0. Pré-requisito:
 Ter o *Git* e o *Docker Desktop* instalado:
@@ -140,6 +141,7 @@ Usar estas instruções com ponderação, pois poderá resultar na eliminação 
 
 
 ---
+
 # 📓 Preparação do sistema para correr em Jupyter Notebook:
 O `JupySQL` permite executar comandos SQL e criar gráficos de grandes conjuntos de dados no Jupyter através das magias %sql, %%sql e %sqlplot. O JupySQL é compatível com todos os principais bancos de dados (por exemplo, PostgreSQL, MySQL, SQL Server), data warehouses (como Snowflake, BigQuery, Redshift) e motores embarcados (SQLite e DuckDB).
 
@@ -189,6 +191,7 @@ pip cache purge
 
 
 ---
+
 # 🧰 Ferramentas para ligação a bases de dados:
 ## a) aplicações:
 - [DBveaver](https://dbeaver.io/download/) - ligação a diferentes bases de dados (sqlite, mysql, postgres, mongodb, oracle, etc);
