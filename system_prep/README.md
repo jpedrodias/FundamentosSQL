@@ -181,8 +181,8 @@ pip cache purge
 
 ---
 # 🖥️ Preparação do sistema para correr em máquina virtual:
-- [Oracle Database 23ai Free VirtualBox Appliance](https://www.oracle.com/database/technologies/databaseappdev-vm.html)
-- [Máquinal Virtual "Mint" com base de dados MySql](https://drive.google.com/file/d/15cBQOABUNHihoPV5I7NGLIcFw-IkJ3k7/view)
+- [Oracle Database 23ai Free VirtualBox Appliance](https://www.oracle.com/database/technologies/databaseappdev-vm.html) (da Oracle)
+- [Máquinal Virtual "Mint" com base de dados MySql](https://drive.google.com/file/d/15cBQOABUNHihoPV5I7NGLIcFw-IkJ3k7/view) (do formador)
 
 
 
