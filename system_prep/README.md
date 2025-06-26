@@ -52,7 +52,7 @@ cd FundamentosSQL
 ou copiar apenas o ficheiro `docker-compose.yml` (ou `docker-compose-extra.yml`) e o ficheiro `.env` com a definção das variáveis de ambiente. 
 
 
-## 2. Inicial docker container
+## 2. Inicial docker container:
 ```bash
 cd system_prep
 docker compose up
@@ -81,7 +81,7 @@ docker compose -f docker-compose-oracle.yml up
 
 ## 3. Dados de acesso:
 
-3.1. ao servidor `MySQL`  
+3.1. ao servidor `MySQL`
 ```yml
 Servidor: mysql
 user: mysql_user
@@ -89,7 +89,7 @@ password: mysql_password
 base de dados: mydatabase
 ```
 
-3.1. ao servidor `PostgresDB`  
+3.1. ao servidor `PostgresDB`
 ```yml
 Servidor: postgres
 user: postgres_user
@@ -97,7 +97,7 @@ password: postgres_password
 base de dados: mydatabase
 ```
 
-3.3. ao servidor `MongoDB`  
+3.3. ao servidor `MongoDB`
 ```yml
 Servidor: mongo
 user: mongo_user
@@ -105,7 +105,7 @@ password: mongo_password
 base de dados: mydatabase
 ```
 
-3.4. ao servidor `OracleDB CE`  
+3.4. ao servidor `OracleDB CE`
 ```yml
 Servidor: oracle
 user: system
@@ -114,14 +114,14 @@ base de dados: mydatabase
 ```
 
 
-## 4. Aceder às bases de dados via clientes web (sem instalações adicionais)
+## 4. Aceder às bases de dados via clientes web (sem instalações adicionais):
 - http://localhost:8081 - **Adminer** é uma ferramenta para ligação ao servidor mysql e postgres;
 - http://localhost:8082 - **phpMyAdmin** é uma ferramanta par aligação ao servidor mysql e mariadb;
 - http://localhost:8083 - **pgAdmin** (user: admin@admin.com | pass: admin) é uma ferramenta para ligação ao servidor postgres;
 - http://localhost:8084 - **Mongo Express** (user: admin | pass: pass) é uma ferramenta para ligação ao servidor MongoDB.
 
 
-## 5. 🧹 Limpeza completa do `cache` Docker
+## 5. 🧹 Limpeza completa do `cache` Docker:
 Apesar de não ter uma "pegada" tão grande com de uma máquina virtual, o Docker é um sistema de virtualização e para além do download das imagens, o docker cria volumes que podem ocupar algum espaço em disco.
 Nem sempre o Docker Desktop mostra a totalidade do cache utilizado e por isso, para uma limpeza completa do cache do docker, basta fazer:
 ```bash
@@ -140,7 +140,7 @@ Usar estas instruções com ponderação, pois poderá resultar na eliminação 
 
 
 ---
-# 📓 Preparação do sistema para correr em Jupyter Notebook
+# 📓 Preparação do sistema para correr em Jupyter Notebook:
 O `JupySQL` permite executar comandos SQL e criar gráficos de grandes conjuntos de dados no Jupyter através das magias %sql, %%sql e %sqlplot. O JupySQL é compatível com todos os principais bancos de dados (por exemplo, PostgreSQL, MySQL, SQL Server), data warehouses (como Snowflake, BigQuery, Redshift) e motores embarcados (SQLite e DuckDB).
 
 [ver JupySQL](https://jupysql.ploomber.io/en/latest/quick-start.html)
@@ -157,12 +157,12 @@ O `JupySQL` permite executar comandos SQL e criar gráficos de grandes conjuntos
 %sql PRAGMA foreign_keys = ON
 ```
 
-## a) Correr Jupyter Online
+## a) Correr Jupyter Online:
 - [Google Colab](https://colab.research.google.com/)
 - [Try Jupyter Lab](https://jupyter.org/try-jupyter/lab/)
 
 
-## b) Correr Jupyter Localmente em windows
+## b) Correr Jupyter Localmente em windows:
 ```bash
 python -m venv C:\TEMP\venvs\FundamentosSQL
 C:\TEMP\venvs\FundamentosSQL\Scripts\Activate.ps1
@@ -171,7 +171,7 @@ pip cache purge
 ```
 
 
-## c) Correr Jupyter Localmente em macOS/Linux
+## c) Correr Jupyter Localmente em macOS/Linux:
 ```bash
 python3 -m venv /tmp/FundamentosSQL
 source /tmp/FundamentosSQL/bin/activate
@@ -189,8 +189,8 @@ pip cache purge
 
 
 ---
-# 🧰 Ferramentas para ligação a Bases de Dados
-## a) aplicações
+# 🧰 Ferramentas para ligação a bases de dados:
+## a) aplicações:
 - [DBveaver](https://dbeaver.io/download/) - ligação a diferentes bases de dados (sqlite, mysql, postgres, mongodb, oracle, etc);
 - [sqlite3](https://www.sqlite.org/download.html) - ferramenta de linha de comandos para ligar a sqlite;
 - [DB Browser for SQLite](https://sqlitebrowser.org/) - ferramenta gráfica para sqlite;
@@ -200,14 +200,14 @@ pip cache purge
 - [MongoDB Compass](https://www.mongodb.com/try/download/compass) - para ligação a MongoDB
 
 
-## b) ferramentas web
+## b) ferramentas web:
 - [Adminer](https://www.adminer.org/en/)
 - [phpMyAdmin](https://www.phpmyadmin.net/)
 - [pgAdmin](https://www.pgadmin.org/download/pgadmin-4-container/)
 - [Mongo Express](https://github.com/mongo-express/mongo-express)
 
 
-## b) apenas online
+## b) apenas online:
 - [SandboxSQL](https://sandboxsql.com/)
 
 
