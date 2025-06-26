@@ -3,6 +3,7 @@
 - [Jupyter](#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-jupyter-notebook)
 - [Outras ferramentas](#-ferramentas-para-liga%C3%A7%C3%A3o-a-bases-de-dados)
 
+
 ---
 
 # 🐳 Preparação do sistema para correr em Docker:
@@ -175,6 +176,13 @@ source /tmp/FundamentosSQL/bin/activate
 pip install -r requirements.txt --upgrade --no-cache-dir
 pip cache purge
 ```
+
+
+---
+# 🖥️ Preparação do sistema para correr em máquina virtual:
+- [Oracle Database 23ai Free VirtualBox Appliance](https://www.oracle.com/database/technologies/databaseappdev-vm.html)
+- [Máquinal Virtual "Mint" com base de dados MySql](https://drive.google.com/file/d/15cBQOABUNHihoPV5I7NGLIcFw-IkJ3k7/view)
+
 
 
 ---
