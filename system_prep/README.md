@@ -199,9 +199,6 @@ pip cache purge
     sudo apt -fix-missing install
     ```
 
-(dados de login e forma de acesso - a verificar)
-
-
 
 ---
 
