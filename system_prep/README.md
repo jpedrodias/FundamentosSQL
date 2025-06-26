@@ -186,7 +186,12 @@ pip cache purge
 ---
 # 🖥️ Preparação do sistema para correr em máquina virtual:
 - [Oracle Database Free VirtualBox Appliance](https://www.oracle.com/database/technologies/databaseappdev-vm.html) (da Oracle)
-    - user: ???, password: ???
+    - user: oracle | system, password: oracle
+    - fazer atualizações
+    ```bash
+    sudo dnf check-updates
+    sudo dnf clean all
+    ```
 - [Máquinal Virtual "Mint" com base de dados MySql e Postgress](https://drive.google.com/file/d/15cBQOABUNHihoPV5I7NGLIcFw-IkJ3k7/view)
     - user: osboxes.org, password: osboxes.org
     - fazer/forçar atualizações:
