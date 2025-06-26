@@ -1,6 +1,7 @@
-# Preparação do sistema:
+# Preparação do sistema para correr em:
 - [Docker](#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-docker)
-- [Jupyter](#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-jupyter-notebook)
+- [Jupyter notebook](#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-jupyter-notebook)
+- [Máquina virtual](#%EF%B8%8F-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-m%C3%A1quina-virtual)
 - [Outras ferramentas](#-ferramentas-para-liga%C3%A7%C3%A3o-a-bases-de-dados)
 
 
