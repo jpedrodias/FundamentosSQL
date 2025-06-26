@@ -191,7 +191,8 @@ pip cache purge
     - user: osboxes.org, password: osboxes.org
     - fazer/forçar atualizações:
     ```bash
-    sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y
+    sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt dist-upgrade -y
+    sudo apt autoclean -y && sudo apt autoremove -y
     ```
     - concertar falhas na atualização:
     ```bash
