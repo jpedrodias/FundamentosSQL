@@ -9,7 +9,7 @@
 
 ---
 
-## 🐳 Preparação do sistema para correr em Docker
+# 🐳 Preparação do sistema para correr em Docker
 
 Nos ficheiros de *compose* incluídos neste repositório existem diferentes cenários de base de dados e respetivas ferramentas de administração:
 
@@ -21,14 +21,14 @@ Nos ficheiros de *compose* incluídos neste repositório existem diferentes cen�
 
 
 
-### Servidores incluídos
+## Servidores incluídos
 
 - 🐬 **MySQL** — SGBD relacional (RDBMS)
 - 🐘 **PostgreSQL** — SGBD relacional avançado (ORDBMS)
 - 🍃 **MongoDB** — Base de dados NoSQL orientada a documentos (Document Store)
 - 🔶 **OracleDB CE** — SGBD relacional corporativo, versão gratuita *Community Edition* para testes e desenvolvimento
 
-### Ferramentas de administração via Web
+## Ferramentas de administração via Web
 
 - 🛠️ **Adminer** — Interface única, leve, compatível com vários SGBDs
 - 🐬 **phpMyAdmin** — Interface clássica para MySQL/MariaDB
@@ -80,7 +80,7 @@ docker compose up -d
 > E neste caso, para parar estes serviço que ficaram a correr em background fazer `docker compose down` ou fazer stop dentro do Docker Desktop.
 
 
-**Extra**:
+#### Extra:
 - Para correr a versão com mais serviços (mysql, postgres e mongodb), basta utilizar o comando:
 >    ```bash
 >    docker compose -f docker-compose-extra.yml up
