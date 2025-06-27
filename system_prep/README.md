@@ -62,7 +62,7 @@ winget install -e --id Docker.DockerDesktop
 git clone https://github.com/jpedrodias/FundamentosSQL.git
 cd FundamentosSQL
 ```
-Ou, em alternatica, copie apenas o ficheiro `docker-compose.yml` e o ficheiro `.env`.
+> Ou, em alternatica, copie apenas o ficheiro `docker-compose.yml` e o ficheiro `.env`.
 
 
 ### 2. Inicial docker container:
