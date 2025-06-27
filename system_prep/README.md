@@ -38,19 +38,23 @@ Nos ficheiros de *compose* incluídos neste repositório existem diferentes cen�
 
 ---
 
-# 🛠️ Etapas da instalação:
-## 0. Pré-requisito:
-Ter o *Git* e o *Docker Desktop* instalado:
+## 🛠️ Etapas da instalação
+
+### 0. Pré-requisitos
+
+Certifique-se de que tem **Git** e **Docker Desktop** instalados:
+
 - 🐳 [Git](https://git-scm.com/downloads)
 - 🐙 [Docker Desktop](https://www.docker.com/get-started/)
 
-
-Ou em alternativa, fazer a instalação usando `winget` (em Windows)
-```bash
-winget update
-winget install -e --id Git.Git
-winget install -e --id Docker.DockerDesktop
-```
+> **Windows**  
+> Como alternativa, utilize o **winget**:
+> 
+> ```bash
+> winget update
+> winget install -e --id Git.Git
+> winget install -e --id Docker.DockerDesktop
+> ```
 
 
 ## 1. Clonar este repositório:
