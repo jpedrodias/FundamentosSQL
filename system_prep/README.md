@@ -16,7 +16,7 @@ Nos ficheiros de *compose* incluídos neste repositório existem diferentes cen�
 | Ficheiro                      | Servidores                        | Ferramentas Web                             |
 |-------------------------------|-----------------------------------|---------------------------------------------|
 | **docker-compose.yml**        | MySQL                             | Adminer, phpMyAdmin                         |
-| **docker-compose-extra.yml**  | MySQL, PostgreSQL, MongoDB        | Adminer, phpMyAdmin, pgAdmin, Mongo Express |
+| **docker-compose-extra.yml**  | MySQL, PostgreSQL e MongoDB       | Adminer, phpMyAdmin, pgAdmin, Mongo Express |
 | **docker-compose-oracle.yml** | OracleDB CE (Community Edition)   | Adminer_ci8 (versão não oficial)            |
 
 
