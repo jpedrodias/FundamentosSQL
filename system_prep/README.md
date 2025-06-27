@@ -23,7 +23,7 @@ Nos ficheiros de *compose* incluídos neste repositório existem diferentes cen�
 
 ## Servidores incluídos
 
- 🐬 **[MySQL](https://www.mysql.com/)** — SGBD relacional (RDBMS)
+- 🐬 **[MySQL](https://www.mysql.com/)** — SGBD relacional (RDBMS)
 - 🐘 **[PostgreSQL](https://www.postgresql.org/)** — SGBD relacional avançado (ORDBMS)
 - 🍃 **[MongoDB](https://www.mongodb.com/)** — Base de dados NoSQL orientada a documentos (Document Store)
 - 🔶 **[OracleDB CE](https://www.oracle.com/pt/database/technologies/appdev/xe.html)** — SGBD relacional corporativo, versão gratuita *Community Edition* para testes e desenvolvimento
