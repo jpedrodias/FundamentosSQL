@@ -6,7 +6,7 @@
 - 🧰 [Outras ferramentas](#-ferramentas-para-ligação-a-bases-de-dados)
 
 
-
+---
 ---
 
 # 🐳 Preparação do sistema para correr em Docker
@@ -36,6 +36,7 @@ Nos ficheiros de *compose* incluídos neste repositório existem diferentes cen�
 - 🍃 **Mongo Express** — Interface leve para MongoDB
 
 
+---
 ---
 
 ## 🛠️ Etapas da instalação
@@ -205,6 +206,8 @@ pip cache purge
 
 
 ---
+---
+
 # 🖥️ Preparação do sistema para correr em máquina virtual:
 - [Oracle Database Free VirtualBox Appliance](https://www.oracle.com/database/technologies/databaseappdev-vm.html) (da Oracle)
     - user: oracle | system, password: oracle
@@ -226,6 +229,7 @@ pip cache purge
     ```
 
 
+---
 ---
 
 # 🧰 Ferramentas para ligação a bases de dados:
