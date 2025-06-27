@@ -1,4 +1,4 @@
-# Preparação do sistema para correr em:
+# Preparação do sistema para correr em Docker, Jupyter ou VM:
 - 🐳 [Docker](#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-docker)
 - 📓 [Jupyter notebook](#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-jupyter-notebook)
 - 🖥️ [Máquina virtual](#%EF%B8%8F-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-m%C3%A1quina-virtual)
@@ -123,8 +123,8 @@ base de dados: mydatabase
 
 
 ## 5. 🧹 Limpeza completa do `cache` Docker:
-Apesar de não ter uma "pegada" tão grande com de uma máquina virtual, o Docker é um sistema de virtualização e para além do download das imagens, o docker cria volumes que podem ocupar algum espaço em disco.
-Nem sempre o Docker Desktop mostra a totalidade do cache utilizado e por isso, para uma limpeza completa do cache do docker, basta fazer:
+Embora o Docker não tenha uma pegada tão grande quanto uma máquina virtual tradicional, continua a ser uma forma de virtualização que pode consumir espaço considerável em disco. Para além das imagens descarregadas, o Docker cria volumes, redes e outros artefactos que podem acumular-se ao longo do tempo.
+Nem sempre o Docker Desktop exibe a totalidade dos recursos utilizados, pelo que, para efetuar uma limpeza completa do cache, podem ser usados os seguintes comandos:
 ```bash
 docker compose down
 docker stop $(docker ps -aq)
@@ -135,8 +135,8 @@ docker network prune -f
 docker system prune -a --volumes -f
 ```
 
-PS: Os `volumes` docker são os espaços onde estão guardados os dados das bases de dados.
-Usar estas instruções com ponderação, pois poderá resultar na eliminação de mais do que deseja ou precisa. 
+ℹ️ Nota: Os volumes Docker armazenam dados persistentes, como os das bases de dados.
+⚠️ Atenção: Estes comandos devem ser utilizados com precaução, pois poderão eliminar mais do que o pretendido, incluindo dados importantes que não possam ser recuperados.
 
 
 
