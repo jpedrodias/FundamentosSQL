@@ -81,7 +81,7 @@ docker compose up -d
 
 
 **Extra**:
-- Para correr a versão com mais serviços (mysql, postgres e mongodb), basta utilizar o comando:
+Para correr a versão com mais serviços (mysql, postgres e mongodb), basta utilizar o comando:
 ```bash
 docker compose -f docker-compose-extra.yml up
 ```
