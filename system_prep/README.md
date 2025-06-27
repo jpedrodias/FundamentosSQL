@@ -9,10 +9,16 @@
 
 ---
 
-# 🐳 Preparação do sistema para correr em Docker:
-- No `docker-compose.yml`existe um servidor de base de dados (mysql) e duas ferramentas web para acesso a esse servidor.
-- No `docker-compose-extra.yml` existem três servidores de base de dados (mysql, postgres e mongodb) e quatro ferramentas web para aceder a esses servidores.
-- Ainda não testado completamente, o `docker-compose-oracle.yml` - versão sem licença.
+## 🐳 Preparação do sistema para correr em Docker
+
+Nos ficheiros de *compose* incluídos neste repositório existem diferentes cenários de base de dados e respetivas ferramentas de administração:
+
+| Ficheiro                      | Servidores                        | Ferramentas Web                             |
+|-------------------------------|-----------------------------------|---------------------------------------------|
+| **docker-compose.yml**        | MySQL                             | Adminer, phpMyAdmin                         |
+| **docker-compose-extra.yml**  | MySQL, PostgreSQL, MongoDB        | Adminer, phpMyAdmin, pgAdmin, Mongo Express |
+| **docker-compose-oracle.yml** | OracleDB CE (Community Edition)   | *Ainda não totalmente testado*              |
+
 
 
 **Servidores** - Sistemas de Gerenciamento de Banco de Dados (SGBD):
