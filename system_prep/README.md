@@ -23,17 +23,17 @@ Nos ficheiros de *compose* incluídos neste repositório existem diferentes cen�
 
 ## Servidores incluídos
 
-- 🐬 **MySQL** — SGBD relacional (RDBMS)
-- 🐘 **PostgreSQL** — SGBD relacional avançado (ORDBMS)
-- 🍃 **MongoDB** — Base de dados NoSQL orientada a documentos (Document Store)
-- 🔶 **OracleDB CE** — SGBD relacional corporativo, versão gratuita *Community Edition* para testes e desenvolvimento
+ 🐬 **[MySQL](https://www.mysql.com/)** — SGBD relacional (RDBMS)
+- 🐘 **[PostgreSQL](https://www.postgresql.org/)** — SGBD relacional avançado (ORDBMS)
+- 🍃 **[MongoDB](https://www.mongodb.com/)** — Base de dados NoSQL orientada a documentos (Document Store)
+- 🔶 **[OracleDB CE](https://www.oracle.com/pt/database/technologies/appdev/xe.html)** — SGBD relacional corporativo, versão gratuita *Community Edition* para testes e desenvolvimento
 
 ## Ferramentas de administração via Web
 
-- 🛠️ **Adminer** — Interface única, leve, compatível com vários SGBDs
-- 🐬 **phpMyAdmin** — Interface clássica para MySQL/MariaDB
-- 🐘 **pgAdmin** — Ferramenta oficial de administração PostgreSQL
-- 🍃 **Mongo Express** — Interface leve para MongoDB
+- 🛠️ **[Adminer](https://www.adminer.org/)** — Interface única, leve, compatível com vários SGBDs
+- 🐬 **[phpMyAdmin](https://www.phpmyadmin.net/)** — Interface clássica para MySQL/MariaDB
+- 🐘 **[pgAdmin](https://www.pgadmin.org/)** — Ferramenta oficial de administração PostgreSQL
+- 🍃 **[Mongo Express](https://github.com/mongo-express/mongo-express)** — Interface leve para MongoDB
 
 
 ---
