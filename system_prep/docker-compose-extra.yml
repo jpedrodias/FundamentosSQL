@@ -148,19 +148,6 @@ services:
     networks:
       - default
 
-  # Web Interface for Database: Oracle (Oracle Free)
-  adminer_oci8:
-    image: soivangoi/nginx-php-adminer-oci8:latest # Adminer with Oracle support
-    container_name: adminer_oci8
-    restart: unless-stopped
-    ports:
-      - 8085:80
-    #depends_on:
-    #  - oracle
-    volumes:
-      - /etc/localtime:/etc/localtime:ro
-    networks:
-      - default
 
 
 volumes:
