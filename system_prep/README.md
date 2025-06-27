@@ -57,15 +57,15 @@ Certifique-se de que tem **Git** e **Docker Desktop** instalados:
 > ```
 
 
-## 1. Clonar este repositório:
+### 1. Clonar este repositório
 ```bash
 git clone https://github.com/jpedrodias/FundamentosSQL.git
 cd FundamentosSQL
 ```
-ou copiar apenas o ficheiro `docker-compose.yml` (ou `docker-compose-extra.yml`) e o ficheiro `.env` com a definção das variáveis de ambiente. 
+Ou, em alternatica, copie apenas o ficheiro `docker-compose.yml` e o ficheiro `.env`.
 
 
-## 2. Inicial docker container:
+### 2. Inicial docker container:
 ```bash
 cd system_prep
 docker compose up
@@ -92,7 +92,7 @@ docker compose -f docker-compose-oracle.yml up
 ```
 
 
-## 3. Dados de acesso:
+### 3. Dados de acesso:
 
 3.1. ao servidor `MySQL`
 ```yml
@@ -127,16 +127,21 @@ base de dados: mydatabase
 ```
 
 
-## 4. Aceder às bases de dados via clientes web (sem instalações adicionais):
-- http://localhost:8081 - **Adminer** é uma ferramenta para ligação ao servidor mysql e postgres;
-- http://localhost:8082 - **phpMyAdmin** é uma ferramanta par aligação ao servidor mysql e mariadb;
-- http://localhost:8083 - **pgAdmin** (user: admin@admin.com | pass: admin) é uma ferramenta para ligação ao servidor postgres;
-- http://localhost:8084 - **Mongo Express** (user: admin | pass: pass) é uma ferramenta para ligação ao servidor MongoDB.
+
+### 4. Clientes Web (sem instalações adicionais)
+- [http://localhost:8081](http://localhost:8081) — Adminer (MySQL & PostgreSQL)  
+- [http://localhost:8082](http://localhost:8082) — phpMyAdmin (MySQL & MariaDB)  
+- [http://localhost:8083](http://localhost:8083) — pgAdmin (user: `admin@admin.com`, pass: `admin`)  
+- [http://localhost:8084](http://localhost:8084) — Mongo Express (user: `admin`, pass: `pass`)  
 
 
-## 5. 🧹 Limpeza completa do `cache` Docker:
-Embora o Docker não tenha uma pegada tão grande quanto uma máquina virtual tradicional, continua a ser uma forma de virtualização que pode consumir espaço considerável em disco. Para além das imagens descarregadas, o Docker cria volumes, redes e outros artefactos que podem acumular-se ao longo do tempo.
-Nem sempre o Docker Desktop exibe a totalidade dos recursos utilizados, pelo que, para efetuar uma limpeza completa do cache, podem ser usados os seguintes comandos:
+
+### 5. 🧹 Limpeza completa do *cache* do Docker
+
+Embora o Docker não tenha uma pegada tão grande quanto uma máquina virtual tradicional, continua a ser uma forma de virtualização que pode consumir espaço considerável em disco. Para além das imagens descarregadas, o Docker cria volumes, redes e outros artefactos que se podem acumular.
+
+Nem sempre o Docker Desktop exibe todos os recursos ocupados. Para efetuar uma limpeza completa do *cache* utilize:
+
 ```bash
 docker compose down
 docker stop $(docker ps -aq)
@@ -147,8 +152,8 @@ docker network prune -f
 docker system prune -a --volumes -f
 ```
 
-ℹ️ Nota: Os volumes Docker armazenam dados persistentes, como os das bases de dados.
-⚠️ Atenção: Estes comandos devem ser utilizados com precaução, pois poderão eliminar mais do que o pretendido, incluindo dados importantes que não possam ser recuperados.
+> ℹ️ **Nota:** Os *volumes* Docker armazenam dados persistentes, como os das bases de dados.  
+> ⚠️ **Atenção:** Use estes comandos com precaução, pois podem eliminar dados importantes que não possam ser recuperados.
 
 
 
