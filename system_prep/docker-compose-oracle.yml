@@ -1,25 +1,47 @@
 # docker-compose-oracle - Testado parcialmente
 # https://hub.docker.com/r/gvenzl/oracle-xe
+# https://hub.docker.com/r/gvenzl/oracle-free
 
 name: FundamentosSQL
 
 services:
   oracle:
-    image: gvenzl/oracle-xe # MAIS DE 3GB!!
-    container_name: oracle_xe
+    image: gvenzl/oracle-free:latest
+    container_name: oracle_free
     ports:
       - 1521:1521
     environment:
       # Database Admin User: system
+      # Service name: FREEPDB1
       ORACLE_PASSWORD: oracle_password
-      ORACLE_DATABASE: mydatabase #XEPDB1 # DEFAULT
+      ORACLE_DATABASE: mydatabase
       APP_USER: oracle_user
       APP_USER_PASSWORD: oracle_password
+    healthcheck:
+        test: ["CMD", "healthcheck.sh"]
+        interval: 10s
+        timeout: 5s
+        retries: 10
+        start_period: 5s
+        start_interval: 5s
     volumes:
       - oracle_data:/opt/oracle/oradata
+      #- my-init.sql:/container-entrypoint-initdb.d/my-init.sql:ro
     networks:
       - default
 
+  adminer_oci8:
+    image: soivangoi/nginx-php-adminer-oci8:latest # Adminer with Oracle support
+    container_name: adminer_oci8
+    restart: unless-stopped
+    ports:
+      - 8085:80
+    depends_on:
+      - oracle
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    networks:
+      - default
 
 volumes:
   oracle_data:

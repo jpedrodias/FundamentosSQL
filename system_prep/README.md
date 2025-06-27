@@ -17,7 +17,7 @@ Nos ficheiros de *compose* incluídos neste repositório existem diferentes cen�
 |-------------------------------|-----------------------------------|---------------------------------------------|
 | **docker-compose.yml**        | MySQL                             | Adminer, phpMyAdmin                         |
 | **docker-compose-extra.yml**  | MySQL, PostgreSQL, MongoDB        | Adminer, phpMyAdmin, pgAdmin, Mongo Express |
-| **docker-compose-oracle.yml** | OracleDB CE (Community Edition)   | *Ainda não totalmente testado*              |
+| **docker-compose-oracle.yml** | OracleDB CE (Community Edition)   | Adminer_ci8              |
 
 
 
@@ -132,7 +132,8 @@ base de dados: mydatabase
 - [http://localhost:8081](http://localhost:8081) — Adminer (MySQL & PostgreSQL)  
 - [http://localhost:8082](http://localhost:8082) — phpMyAdmin (MySQL & MariaDB)  
 - [http://localhost:8083](http://localhost:8083) — pgAdmin (user: `admin@admin.com`, pass: `admin`)  
-- [http://localhost:8084](http://localhost:8084) — Mongo Express (user: `admin`, pass: `pass`)  
+- [http://localhost:8084](http://localhost:8084) — Mongo Express (user: `admin`, pass: `pass`)
+- [http://localhost:8085](http://localhost:8085) — Adminer CI8 (Oracle)  
 
 
 
