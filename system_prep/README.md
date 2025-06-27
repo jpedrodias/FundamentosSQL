@@ -249,5 +249,4 @@ pip cache purge
 ## b) apenas online:
 - [SandboxSQL](https://sandboxsql.com/)
 
-
 ---
