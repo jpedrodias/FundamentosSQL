@@ -21,18 +21,19 @@ Nos ficheiros de *compose* incluídos neste repositório existem diferentes cen�
 
 
 
-**Servidores** - Sistemas de Gerenciamento de Banco de Dados (SGBD):
-- 🐬 **MySQL**	- SGBD Relacional (RDBMS);
-- 🐘 **PostgreSQL** - SGBD Relacional Avançado (ORDBMS)
-- 🍃 **MongoDB** — SGBD NoSQL orientado a documentos (Document Store)
-- 🔶 **OracleDB CE** — SGBD Relacional Corporativo (RDBMS) com recursos avançados, versão gratuita Community Edition (CE) para testes e desenvolvimento
+### Servidores incluídos
 
+- 🐬 **MySQL** — SGBD relacional (RDBMS)
+- 🐘 **PostgreSQL** — SGBD relacional avançado (ORDBMS)
+- 🍃 **MongoDB** — Base de dados NoSQL orientada a documentos (Document Store)
+- 🔶 **OracleDB CE** — SGBD relacional corporativo, versão gratuita *Community Edition* para testes e desenvolvimento
 
-**Ferramentas de acesso via Web** - Ferramentas de Administração de Banco de Dados:
-- 🛠️ **Adminer**: Suporta vários SGBDs via uma única interface PHP leve;
-- 🐬 **phpMyAdmin**: Focado em MySQL/MariaDB, com uma interface web;
-- 🐘 **pgAdmin**: Ferramenta oficial de administração para PostgreSQL;
-- 🍃 **Mongo Express**: Interface web leve para administração do MongoDB.
+### Ferramentas de administração via Web
+
+- 🛠️ **Adminer** — Interface única, leve, compatível com vários SGBDs
+- 🐬 **phpMyAdmin** — Interface clássica para MySQL/MariaDB
+- 🐘 **pgAdmin** — Ferramenta oficial de administração PostgreSQL
+- 🍃 **Mongo Express** — Interface leve para MongoDB
 
 
 ---
