@@ -47,8 +47,8 @@ Certifique-se de que tem **Git** e **Docker Desktop** instalados:
 - 🐳 [Git](https://git-scm.com/downloads)
 - 🐙 [Docker Desktop](https://www.docker.com/get-started/)
 
-**Windows**  
-Como alternativa, utilize o **winget** (windows):
+
+Como alternativa, em windows, é possível fazer esta instalação usando o **winget**:
 
 ```bash
 winget update
