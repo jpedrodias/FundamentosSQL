@@ -1,6 +1,7 @@
 # docker-compose-oracle - Testado parcialmente
 # https://hub.docker.com/r/gvenzl/oracle-xe
 # https://hub.docker.com/r/gvenzl/oracle-free
+# https://hub.docker.com/r/soivangoi/nginx-php-adminer-oci8
 
 name: FundamentosSQL
 
