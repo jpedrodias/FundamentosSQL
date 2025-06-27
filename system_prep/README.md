@@ -1,8 +1,9 @@
-# Preparação do sistema para correr em Docker, Jupyter ou VM:
-- 🐳 [Docker](#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-docker)
-- 📓 [Jupyter notebook](#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-jupyter-notebook)
-- 🖥️ [Máquina virtual](#%EF%B8%8F-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-m%C3%A1quina-virtual)
-- 🧰 [Outras ferramentas](#-ferramentas-para-liga%C3%A7%C3%A3o-a-bases-de-dados)
+# Preparação do sistema para correr em Docker, Jupyter ou VM
+
+- 🐳 [Docker](#-preparação-do-sistema-para-correr-em-docker)
+- 📓 [Jupyter Notebook](#-preparação-do-sistema-para-correr-em-jupyter-notebook)
+- 🖥️ [Máquina virtual](#-preparação-do-sistema-para-correr-em-máquina-virtual)
+- 🧰 [Outras ferramentas](#-ferramentas-para-ligação-a-bases-de-dados)
 
 
 
