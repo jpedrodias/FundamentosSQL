@@ -47,14 +47,14 @@ Certifique-se de que tem **Git** e **Docker Desktop** instalados:
 - 🐳 [Git](https://git-scm.com/downloads)
 - 🐙 [Docker Desktop](https://www.docker.com/get-started/)
 
-> **Windows**  
-> Como alternativa, utilize o **winget**:
-> 
-> ```bash
-> winget update
-> winget install -e --id Git.Git
-> winget install -e --id Docker.DockerDesktop
-> ```
+**Windows**  
+Como alternativa, utilize o **winget** (windows):
+
+```bash
+winget update
+winget install -e --id Git.Git
+winget install -e --id Docker.DockerDesktop
+```
 
 
 ### 1. Clonar este repositório
@@ -72,21 +72,21 @@ docker compose up
 ```
 Para manter os serviços ligados é necessário manter o terminal aberto e para parar estes serviços basta pressionar `Ctrl+C`
 
-Em alternativa, é possível iniciar os serviços em background adicionando a flag ` -d` (detached mode) desta forma:
+Para iniciar os serviços em background é a mesma instrução mas, com a flag ` -d` (detached mode):
 ```bash
 cd system_prep
 docker compose up -d
 ```
-E neste caso, para parar estes serviço que ficaram a correr em background basta fazer `docker compose down` ou fazer stop dentro do Docker Desktop.
+E neste caso, para parar estes serviço que ficaram a correr em background fazer `docker compose down` ou fazer stop dentro do Docker Desktop.
 
 
 **Extra**:
-- Para correr a versão mais completa, com mais serviços (mysql, postgres e mongodb), basta utilizar o comando:
+- Para correr a versão com mais serviços (mysql, postgres e mongodb), basta utilizar o comando:
 ```bash
 docker compose -f docker-compose-extra.yml up
 ```
 
-- Para correr a ver~so sem licença da base de dados da oracle, usar o comando:
+- Para correr a versão sem com a base de dados da Oracle, usar o comando:
 ```bash
 docker compose -f docker-compose-oracle.yml up
 ```
