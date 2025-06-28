@@ -43,15 +43,18 @@ Nos ficheiros de *compose* incluídos neste repositório existem diferentes cen�
 
 ### 0. Pré-requisitos
 
-Certifique-se de que tem **Git** e **Docker Desktop** instalados:
+Certifique-se de que tem **Git**, **WSL** e **Docker Desktop** instalados:
 
 - 🐳 [Git](https://git-scm.com/downloads)
+- 🐧 [WSL (Windows Subsystem for Linux)](https://learn.microsoft.com/pt-pt/windows/wsl/install)
 - 🐙 [Docker Desktop](https://www.docker.com/get-started/)
 
 
 Como alternativa, em windows, é possível fazer esta instalação usando o **winget**:
 
 ```bash
+wsl --install
+wsl --update
 winget update
 winget install -e --id Git.Git
 winget install -e --id Docker.DockerDesktop
