@@ -12,7 +12,7 @@ services:
     environment:
       SA_PASSWORD: ${SQLSERVER_SA_PASSWORD}
       ACCEPT_EULA: "Y"
-      MSSQL_PID: Express
+      MSSQL_PID: Express # Edição gratuita
       TZ: ${TZ}
     volumes:
       - /etc/localtime:/etc/localtime:ro
