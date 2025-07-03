@@ -131,6 +131,14 @@ base de dados: mydatabase
 ```
 
 
+3.5. ao servidor `MS SQL Server - free`
+```yml
+Servidor: sqlserver
+user: sa
+password: mssql_password_SuperFort3!
+base de dados: (deixar vazio)
+```
+
 
 ### 4. Clientes Web (sem instalações adicionais)
 |LINK               |Serviço                  |Descrição                      |compose|extra|oracle|
