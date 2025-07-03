@@ -1,0 +1,54 @@
+# docker-compose com servidor MS SQL Server e ferramenta web: adminer
+name: FundamentosSQL-SQLServer
+
+services:
+  # Servidor 1: MS SQL Server Configuration
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver_server
+    restart: unless-stopped
+    ports:
+      - 1433:1433
+    environment:
+      SA_PASSWORD: ${SQLSERVER_SA_PASSWORD}
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Express
+      TZ: ${TZ}
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - sqlserver_data:/var/opt/mssql
+    networks:
+      - default
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P ${SQLSERVER_SA_PASSWORD} -Q 'SELECT 1'"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Web Interface for Database: Adminer
+  adminer:
+    image: adminer:latest
+    container_name: adminer_sqlserver
+    restart: unless-stopped
+    ports:
+      - 8081:8080
+    depends_on:
+      - sqlserver
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      ADMINER_DEFAULT_SERVER: sqlserver
+      TZ: ${TZ}
+    networks:
+      - default
+
+
+volumes:
+  sqlserver_data:      # Servidor 1: MS SQL Server
+
+
+networks:
+  default:
+    name: FundamentosSQL-SQLServer-network
+    #external: true # uncomment this on production
+    driver: bridge
