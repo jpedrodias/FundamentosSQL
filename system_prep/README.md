@@ -173,7 +173,7 @@ base de dados: (deixar vazio)
 |[http://localhost:8081](http://localhost:8081)|Adminer      |✅|✅|❌|✅| none |
 |[http://localhost:8082](http://localhost:8082)|phpMyAdmin   |✅|✅|❌|❌| none |
 |[http://localhost:8083](http://localhost:8083)|pgAdmin      |❌|✅|❌|❌| (user: `admin@admin.com`, pass: `admin`) |
-|[http://localhost:8084](http://localhost:8084)|Mongo Express|❌|✅|❌|❌| (user: `admin`, pass: `pass`) |
+|[http://localhost:8084](http://localhost:8084)|Mongo Express|❌|✅|❌|❌| (user: `admin`, pass: `admin`) |
 |[http://localhost:8085](http://localhost:8085)|Adminer_ci8  |❌|❌|✅|❌| none |
 
 
