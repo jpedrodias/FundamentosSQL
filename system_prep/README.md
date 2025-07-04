@@ -6,8 +6,11 @@
 - 🧰 [Outras ferramentas](#-ferramentas-para-ligação-a-bases-de-dados)
 
 
+
 ---
 ---
+
+
 
 # 🐳 Preparação do sistema para correr em Docker
 
@@ -18,6 +21,7 @@ Nos ficheiros de *compose* incluídos neste repositório existem diferentes cen�
 | **docker-compose.yml**        | MySQL                             | Adminer, phpMyAdmin                         |
 | **docker-compose-extra.yml**  | MySQL, PostgreSQL e MongoDB       | Adminer, phpMyAdmin, pgAdmin, Mongo Express |
 | **docker-compose-oracle.yml** | OracleDB CE (Community Edition)   | Adminer_ci8 (versão não oficial)            |
+| **docker-compose-sqlserver.yml**  | Microsoft SQL Server (Express)    | Adminer                                     |
 
 
 
@@ -27,6 +31,9 @@ Nos ficheiros de *compose* incluídos neste repositório existem diferentes cen�
 - 🐘 **[PostgreSQL](https://www.postgresql.org/)** — SGBD relacional avançado (ORDBMS)
 - 🍃 **[MongoDB](https://www.mongodb.com/)** — Base de dados NoSQL orientada a documentos (Document Store)
 - 🔶 **[OracleDB CE](https://www.oracle.com/pt/database/technologies/appdev/xe.html)** — SGBD relacional corporativo, versão gratuita *Community Edition* para testes e desenvolvimento
+- 🟦 **[Microsoft SQL Server Express](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)** — SGBD relacional da Microsoft, versão gratuita *Express* para desenvolvimento e aplicações pequenas
+
+
 
 ## Ferramentas de administração via Web
 
@@ -36,8 +43,11 @@ Nos ficheiros de *compose* incluídos neste repositório existem diferentes cen�
 - 🍃 **[Mongo Express](https://github.com/mongo-express/mongo-express)** — Interface leve para MongoDB
 
 
+
 ---
 ---
+
+
 
 ## 🛠️ Etapas da instalação
 
@@ -61,12 +71,14 @@ winget install -e --id Docker.DockerDesktop
 ```
 
 
+
 ### 1. Clonar este repositório
 ```bash
 git clone https://github.com/jpedrodias/FundamentosSQL.git
 cd FundamentosSQL
 ```
 > Ou, em alternatica, copie apenas o ficheiro `docker-compose.yml` e o ficheiro `.env`.
+
 
 
 ### 2. Inicial docker container:
@@ -84,16 +96,27 @@ docker compose up -d
 > E neste caso, para parar estes serviço que ficaram a correr em background fazer `docker compose down` ou fazer stop dentro do Docker Desktop.
 
 
+
 #### Extra:
 - Para correr a versão com mais serviços (mysql, postgres e mongodb), basta utilizar o comando:
 >    ```bash
 >    docker compose -f docker-compose-extra.yml up
 >    ```
 
-- Para correr a versão sem com a base de dados da Oracle, usar o comando:
+
+
+- Para correr a versão com a base de dados da Oracle, usar o comando:
 >    ```bash
 >    docker compose -f docker-compose-oracle.yml up
 >    ```
+
+
+
+- Para correr a versão com a base de dados da Microsoft SQL Server, usar o comando:
+>    ```bash
+>    docker compose -f docker-compose-sqlserver.yml up
+>    ```
+
 
 
 ### 3. Dados de acesso:
@@ -130,7 +153,6 @@ password: oracle_password
 base de dados: mydatabase
 ```
 
-
 3.5. ao servidor `MS SQL Server - free`
 ```yml
 Servidor: sqlserver
@@ -138,6 +160,7 @@ user: sa
 password: mssql_password_SuperFort3!
 base de dados: (deixar vazio)
 ```
+
 
 
 ### 4. Clientes Web (sem instalações adicionais)
@@ -174,6 +197,9 @@ docker system prune -a --volumes -f
 
 
 ---
+---
+
+
 
 # 📓 Preparação do sistema para correr em Jupyter Notebook:
 O `JupySQL` permite executar comandos SQL e criar gráficos de grandes conjuntos de dados no Jupyter através das magias %sql, %%sql e %sqlplot. O JupySQL é compatível com todos os principais bancos de dados (por exemplo, PostgreSQL, MySQL, SQL Server), data warehouses (como Snowflake, BigQuery, Redshift) e motores embarcados (SQLite e DuckDB).
@@ -219,6 +245,8 @@ pip cache purge
 ---
 ---
 
+
+
 # 🖥️ Preparação do sistema para correr em máquina virtual:
 - [Oracle Database Free VirtualBox Appliance](https://www.oracle.com/database/technologies/databaseappdev-vm.html) (da Oracle)
     - user: oracle | system, password: oracle
@@ -242,6 +270,8 @@ pip cache purge
 
 ---
 ---
+
+
 
 # 🧰 Ferramentas para ligação a bases de dados:
 ## a) aplicações:
