@@ -97,21 +97,21 @@ docker compose up -d
 
 
 
-#### Extra:
+#### Extra: MySQL 6 Postgres + mongodb
 - Para correr a versão com mais serviços (mysql, postgres e mongodb), basta utilizar o comando:
 >    ```bash
 >    docker compose -f docker-compose-extra.yml up
 >    ```
 
 
-
+#### Extra: Oracle
 - Para correr a versão com a base de dados da Oracle, usar o comando:
 >    ```bash
 >    docker compose -f docker-compose-oracle.yml up
 >    ```
 
 
-
+#### Extra: MS SQL Server
 - Para correr a versão com a base de dados da Microsoft SQL Server, usar o comando:
 >    ```bash
 >    docker compose -f docker-compose-sqlserver.yml up
