@@ -71,6 +71,60 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+  
+  # Servidor 4: Oracle Database Free (XE/23c)
+  oracle:
+    image: gvenzl/oracle-free:latest
+    container_name: oracle_free
+    ports:
+      # SQL*Net / Listener
+      - 1521:1521
+      # Enterprise Manager Express / APEX
+      - 5500:5500
+    restart: unless-stopped
+    environment:
+      TZ: Europe/Lisbon
+      # Service name: FREEPDB1
+      # Palavra‑passe do utilizador SYSTEM (alterar à sua escolha)
+      ORACLE_PASSWORD: oracle_password
+      ORACLE_DATABASE: mydatabase
+      APP_USER: oracle_user
+      APP_USER_PASSWORD: oracle_password
+    healthcheck:
+        test: ["CMD", "healthcheck.sh"]
+        interval: 10s
+        timeout: 5s
+        retries: 10
+        start_period: 5s
+        start_interval: 5s
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+      #- my-init.sql:/container-entrypoint-initdb.d/my-init.sql:ro
+    networks:
+      - default
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver_server
+    restart: unless-stopped
+    ports:
+      - 1433:1433
+    environment:
+      SA_PASSWORD: ${SQLSERVER_SA_PASSWORD}
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Express # Edição gratuita
+      TZ: ${TZ}
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - sqlserver_data:/var/opt/mssql
+    networks:
+      - default
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P ${SQLSERVER_SA_PASSWORD} -Q 'SELECT 1'"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
 
   # Web Interface for Database: vários
   adminer:
@@ -148,6 +202,18 @@ services:
     networks:
       - default
 
+  adminer_oci8:
+    image: soivangoi/nginx-php-adminer-oci8:latest # Adminer with Oracle support
+    container_name: adminer-oracle
+    restart: unless-stopped
+    ports:
+      - 8085:80
+    depends_on:
+      - oracle
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    networks:
+      - default
 
 
 volumes:
@@ -156,6 +222,8 @@ volumes:
   mongodb_data:    # Servidor 3: MongoDB
   mongodb_config:  # MongoDB Configurations
   pgadmin_data:    # Web Interfaces for Databases: pgAdmin
+  oracle_data:     # Servidor 4: Oracle Database Free (XE/23c)
+  sqlserver_data:  # Servidor 5: MS SQL Server
 
 
 networks:
