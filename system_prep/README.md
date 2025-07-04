@@ -168,7 +168,7 @@ base de dados: (deixar vazio)
 
 
 ### 4. Clientes Web (sem instalações adicionais)
-|LINK                                          |Serviço      |MySQL|Postgres|Oracle|MS SQL| Acesso |
+|LINK                                          |Ferramenta   |MySQL|Postgres|Oracle|MS SQL| Acesso |
 |----------------------------------------------|-------------|-----|--------|------|------|--------|
 |[http://localhost:8081](http://localhost:8081)|Adminer      |✅|✅|❌|✅| none |
 |[http://localhost:8082](http://localhost:8082)|phpMyAdmin   |✅|✅|❌|❌| none |
