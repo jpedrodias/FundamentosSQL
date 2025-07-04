@@ -1,0 +1,72 @@
+# docker-compose com servidor mysql e ferramenta web: adminer e phpmyadmin
+name: FundamentosSQL
+
+services:
+  # Servidor 1: MySQL Configuration
+  mysql:
+    image: mysql:latest
+    container_name: mysql_server
+    restart: unless-stopped
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      TZ: ${TZ}
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - mysql_data:/var/lib/mysql
+    networks:
+      - default
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # Web Interface for Database: vários
+  adminer:
+    image: adminer:latest
+    container_name: adminer
+    restart: unless-stopped
+    ports:
+      - 8081:8080
+    depends_on:
+      - mysql
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    networks:
+      - default
+
+  # Web Interface for Database: MySQL
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    restart: always
+    ports:
+      - 8082:80
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: ${MYSQL_USER}
+      PMA_PASSWORD: ${MYSQL_PASSWORD}
+      PMA_PORT: 3306
+      TZ: ${TZ}
+    depends_on:
+      - mysql
+    networks:
+      - default
+
+
+volumes:
+  mysql_data:      # Servidor 1: MySQL
+
+
+networks:
+  default:
+    name: FundamentosSQL-network
+    #external: true # uncomment this on production
+    driver: bridge
