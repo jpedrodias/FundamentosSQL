@@ -141,13 +141,13 @@ base de dados: (deixar vazio)
 
 
 ### 4. Clientes Web (sem instalações adicionais)
-|LINK               |Serviço                  |Descrição                      |compose|extra|oracle|
-|-------------------|-------------------------|-------------------------------|-------|-----|------|
-|[http://localhost:8081](http://localhost:8081)|Adminer|MySQL & PostgreSQL|✅|✅|❌|
-|[http://localhost:8082](http://localhost:8082)|phpMyAdmin|MySQL & MariaDB|✅|✅|❌|
-|[http://localhost:8083](http://localhost:8083)|pgAdmin|(user: `admin@admin.com`, pass: `admin`)|❌|✅|❌|
-|[http://localhost:8084](http://localhost:8084)|Mongo Express|(user: `admin`, pass: `pass`)|❌|✅|❌|
-|[http://localhost:8085](http://localhost:8085)|Adminer_ci8|Oracle|❌|❌|✅|
+|LINK               |Serviço                  |Descrição                      |compose|extra|oracle|ms sql|
+|-------------------|-------------------------|-------------------------------|-------|-----|------|------|
+|[http://localhost:8081](http://localhost:8081)|Adminer|MySQL & PostgreSQL|✅|✅|❌|✅|
+|[http://localhost:8082](http://localhost:8082)|phpMyAdmin|MySQL & MariaDB|✅|✅|❌|❌|
+|[http://localhost:8083](http://localhost:8083)|pgAdmin|(user: `admin@admin.com`, pass: `admin`)|❌|✅|❌|❌|
+|[http://localhost:8084](http://localhost:8084)|Mongo Express|(user: `admin`, pass: `pass`)|❌|✅|❌|❌|
+|[http://localhost:8085](http://localhost:8085)|Adminer_ci8|Oracle|❌|❌|✅|❌|
 
 
 
