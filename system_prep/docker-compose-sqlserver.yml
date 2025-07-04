@@ -1,5 +1,5 @@
 # docker-compose com servidor MS SQL Server e ferramenta web: adminer
-name: FundamentosSQL-SQLServer
+name: FundamentosSQL
 
 services:
   # Servidor 1: MS SQL Server Configuration

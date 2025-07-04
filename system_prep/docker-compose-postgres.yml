@@ -1,5 +1,5 @@
 # docker-compose com servidor PostgreSQL e ferramentas web: adminer e pgAdmin
-name: FundamentosSQL-PostgreSQL
+name: FundamentosSQL
 
 services:
   # Servidor 1: PostgreSQL Configuration
