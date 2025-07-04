@@ -16,12 +16,16 @@
 
 Nos ficheiros de *compose* incluídos neste repositório existem diferentes cenários de base de dados e respetivas ferramentas de administração:
 
-| Ficheiro                      | Servidores                        | Ferramentas Web                             |
-|-------------------------------|-----------------------------------|---------------------------------------------|
-| **docker-compose.yml**        | MySQL                             | Adminer, phpMyAdmin                         |
-| **docker-compose-extra.yml**  | MySQL, PostgreSQL e MongoDB       | Adminer, phpMyAdmin, pgAdmin, Mongo Express |
-| **docker-compose-oracle.yml** | OracleDB CE (Community Edition)   | Adminer_ci8 (versão não oficial)            |
-| **docker-compose-sqlserver.yml**  | Microsoft SQL Server (Express)    | Adminer                                     |
+| Ficheiro                         | Servidores                        | Ferramentas Web                             |
+|----------------------------------|-----------------------------------|---------------------------------------------|
+| **docker-compose.yml**           | MySQL                             | Adminer, phpMyAdmin                         |
+| **docker-compose-mysql.yml**     | MySQL                             | Adminer, phpMyAdmin                         |
+| **docker-compose-postgres.yml**  | PostgreSQL                        | Adminer, pgAdmin                            |
+| **docker-compose-mongo.yml**     | MongoDB                           | Mongo Express                               |
+| **docker-compose-oracle.yml**    | OracleDB CE (Community Edition)   | Adminer_ci8 (versão não oficial)            |
+| **docker-compose-sqlserver.yml** | Microsoft SQL Server (Express)    | Adminer                                     |
+| **docker-compose-extra.yml**     | MySQL, PostgreSQL e MongoDB       | Adminer, phpMyAdmin, pgAdmin, Mongo Express |
+
 
 
 
