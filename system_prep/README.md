@@ -108,7 +108,7 @@ docker compose up -d
 >    ```
 
 
-#### Extra - Servidor 2: Postgres
+#### Extra - Servidor 2: PostgreSQL
 - Para correr a versão com o servidor da base de dados Postgres, usar o comando:
 >    ```bash
 >    docker compose -f docker-compose-postgres.yml up
@@ -120,14 +120,14 @@ docker compose up -d
 >    docker compose -f docker-compose-mongo.yml up
 >    ```
 
-#### Extra - Servidor 4: Oracle
+#### Extra - Servidor 4: Oracle Database Express Edition
 - Para correr a versão com o servidor de base de dados Oracle, usar o comando:
 >    ```bash
 >    docker compose -f docker-compose-oracle.yml up
 >    ```
 
 
-#### Extra - Servidor 5: MS SQL Server
+#### Extra - Servidor 5: Microsoft SQL Server - Express
 - Para correr a versão com a base de dados da Microsoft SQL Server, usar o comando:
 >    ```bash
 >    docker compose -f docker-compose-sqlserver.yml up
@@ -152,7 +152,7 @@ password: mysql_password
 base de dados: mydatabase
 ```
 
-3.1. ao servidor 2 - `Postgres`
+3.1. ao servidor 2 - `PostgreSQL`
 ```yml
 Servidor: postgres
 user: postgres_user
@@ -168,7 +168,7 @@ password: mongo_password
 base de dados: mydatabase
 ```
 
-3.4. ao servidor 4 - `OracleDB CE`
+3.4. ao servidor 4 - `Oracle Database Express Edition`
 ```yml
 Servidor: oracle
 user: system
@@ -176,11 +176,11 @@ password: oracle_password
 base de dados: mydatabase
 ```
 
-3.5. ao servidor 5 - `MS SQL Server - free`
+3.5. ao servidor 5 - `Microsoft SQL Server - Express`
 ```yml
 Servidor: sqlserver
 user: sa
-password: mssql_password_SuperFort3!
+password: mssql_password_SuperFort3
 base de dados: (deixar vazio)
 ```
 
@@ -189,11 +189,11 @@ base de dados: (deixar vazio)
 ### 4. Clientes Web (sem instalações adicionais)
 |LINK                                          |Ferramenta   |MySQL|Postgres|Oracle|MS SQL|MongoDB |Acesso |
 |----------------------------------------------|-------------|-----|--------|------|------|--------|-------|
-|[http://localhost:8081](http://localhost:8081)|Adminer      |✅ |✅ |❌ |✅ |❌ |none |
-|[http://localhost:8082](http://localhost:8082)|phpMyAdmin   |✅ |❌ |❌ |❌ |❌ |none |
-|[http://localhost:8083](http://localhost:8083)|pgAdmin      |❌ |✅ |❌ |❌ |❌ |(user: `admin@admin.com`, pass: `admin`) |
-|[http://localhost:8084](http://localhost:8084)|Mongo Express|❌ |❌ |❌ |❌ |✅ |(user: `admin`, pass: `admin`) |
-|[http://localhost:8085](http://localhost:8085)|Adminer_ci8  |❌ |❌ |✅ |✅ |❌ |none |
+|[http://localhost:8081](http://localhost:8081)|Adminer      |✅ |✅ |❌ |✅ |❌ | none |
+|[http://localhost:8082](http://localhost:8082)|phpMyAdmin   |✅ |❌ |❌ |❌ |❌ | none |
+|[http://localhost:8083](http://localhost:8083)|pgAdmin      |❌ |✅ |❌ |❌ |❌ | user: `admin@admin.com`, pass: `admin` |
+|[http://localhost:8084](http://localhost:8084)|Mongo Express|❌ |❌ |❌ |❌ |✅ | user: `admin`, pass: `admin` |
+|[http://localhost:8085](http://localhost:8085)|Adminer_ci8  |❌ |❌ |✅ |❌ |❌ | none |
 
 
 
