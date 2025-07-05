@@ -181,7 +181,7 @@ base de dados: mydatabase
 Servidor: sqlserver
 user: sa
 password: mssql_Sup3rStrong3Password!
-base de dados: (deixar vazio)
+base de dados: tempdb (ou deixar vazio)
 ```
 
 
