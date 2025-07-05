@@ -103,6 +103,7 @@ services:
     networks:
       - default
 
+  # Servidor 5: MS SQL Server
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: mssql_server

@@ -101,31 +101,50 @@ docker compose up -d
 
 
 
-#### Extra: MySQL 6 Postgres + mongodb
-- Para correr a versão com mais serviços (mysql, postgres e mongodb), basta utilizar o comando:
+#### Extra - Servidor 1: MySQL
+- Para correr a versão com o servidor da base de dados MySQL, usar o comando:
 >    ```bash
->    docker compose -f docker-compose-extra.yml up
+>    docker compose -f docker-compose-mysql.yml up
 >    ```
 
 
-#### Extra: Oracle
-- Para correr a versão com a base de dados da Oracle, usar o comando:
+#### Extra - Servidor 2: Postgres
+- Para correr a versão com o servidor da base de dados Postgres, usar o comando:
+>    ```bash
+>    docker compose -f docker-compose-postgres.yml up
+>    ```
+
+#### Extra - Servidor 3: MongoDB
+- Para correr a versão com o servidor de base de dados MongoDB, usar o comando:
+>    ```bash
+>    docker compose -f docker-compose-mongo.yml up
+>    ```
+
+#### Extra - Servidor 4: Oracle
+- Para correr a versão com o servidor de base de dados Oracle, usar o comando:
 >    ```bash
 >    docker compose -f docker-compose-oracle.yml up
 >    ```
 
 
-#### Extra: MS SQL Server
+#### Extra - Servidor 5: MS SQL Server
 - Para correr a versão com a base de dados da Microsoft SQL Server, usar o comando:
 >    ```bash
 >    docker compose -f docker-compose-sqlserver.yml up
 >    ```
 
 
+#### Extra - Todos os servidores:
+- Para correr a versão com todos os servidores, usar o comando:
+>    ```bash
+>    docker compose -f docker-compose-ALL.yml up
+>    ```
+
+
 
 ### 3. Dados de acesso:
 
-3.1. ao servidor `MySQL`
+3.1. ao servidor 1 - `MySQL`
 ```yml
 Servidor: mysql
 user: mysql_user
@@ -133,7 +152,7 @@ password: mysql_password
 base de dados: mydatabase
 ```
 
-3.1. ao servidor `PostgresDB`
+3.1. ao servidor 2 - `Postgres`
 ```yml
 Servidor: postgres
 user: postgres_user
@@ -141,7 +160,7 @@ password: postgres_password
 base de dados: mydatabase
 ```
 
-3.3. ao servidor `MongoDB`
+3.3. ao servidor 3 - `MongoDB`
 ```yml
 Servidor: mongo
 user: mongo_user
@@ -149,7 +168,7 @@ password: mongo_password
 base de dados: mydatabase
 ```
 
-3.4. ao servidor `OracleDB CE`
+3.4. ao servidor 4 - `OracleDB CE`
 ```yml
 Servidor: oracle
 user: system
@@ -157,7 +176,7 @@ password: oracle_password
 base de dados: mydatabase
 ```
 
-3.5. ao servidor `MS SQL Server - free`
+3.5. ao servidor 5 - `MS SQL Server - free`
 ```yml
 Servidor: sqlserver
 user: sa
