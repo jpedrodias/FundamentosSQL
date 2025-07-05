@@ -180,7 +180,7 @@ base de dados: mydatabase
 ```yml
 Servidor: sqlserver
 user: sa
-password: mssql_password_SuperFort3
+password: mssql_Sup3rStrong3Password!
 base de dados: (deixar vazio)
 ```
 
