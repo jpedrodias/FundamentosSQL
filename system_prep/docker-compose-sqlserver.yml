@@ -5,7 +5,7 @@ services:
   # Servidor 1: MS SQL Server Configuration
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
-    container_name: sqlserver_server
+    container_name: mssql_server
     restart: unless-stopped
     ports:
       - 1433:1433
@@ -16,7 +16,7 @@ services:
       TZ: ${TZ}
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - sqlserver_data:/var/opt/mssql
+      - mssqlserver_data:/var/opt/mssql
     networks:
       - default
     healthcheck:
@@ -44,7 +44,7 @@ services:
 
 
 volumes:
-  sqlserver_data:      # Servidor 1: MS SQL Server
+  mssqlserver_data:      # Servidor 1: MS SQL Server
 
 
 networks:

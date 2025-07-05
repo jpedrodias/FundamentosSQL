@@ -75,7 +75,7 @@ services:
   # Servidor 4: Oracle Database Free (XE/23c)
   oracle:
     image: gvenzl/oracle-free:latest
-    container_name: oracle_free
+    container_name: oracle_server
     ports:
       # SQL*Net / Listener
       - 1521:1521
@@ -105,7 +105,7 @@ services:
 
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
-    container_name: sqlserver_server
+    container_name: mssql_server
     restart: unless-stopped
     ports:
       - 1433:1433
@@ -116,7 +116,7 @@ services:
       TZ: ${TZ}
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - sqlserver_data:/var/opt/mssql
+      - mssqlserver_data:/var/opt/mssql
     networks:
       - default
     healthcheck:
@@ -223,7 +223,7 @@ volumes:
   mongodb_config:  # MongoDB Configurations
   pgadmin_data:    # Web Interfaces for Databases: pgAdmin
   oracle_data:     # Servidor 4: Oracle Database Free (XE/23c)
-  sqlserver_data:  # Servidor 5: MS SQL Server
+  mssqlserver_data:  # Servidor 5: MS SQL Server
 
 
 networks:

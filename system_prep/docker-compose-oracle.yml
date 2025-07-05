@@ -9,7 +9,7 @@ services:
   # --- Oracle Database Free (XE/23c) -----------------------------
   oracle:
     image: gvenzl/oracle-free:latest
-    container_name: oracle_free
+    container_name: oracle_server
     ports:
       # SQL*Net / Listener
       - 1521:1521
