@@ -1,4 +1,4 @@
-# docker-compose com servidor mysql e ferramenta web: adminer e phpmyadmin
+# docker-compose com servidor mysql
 name: FundamentosSQL
 
 services:
@@ -26,44 +26,8 @@ services:
       timeout: 5s
       retries: 3
 
-  # Web Interface for Database: vários
-  adminer:
-    image: adminer:latest
-    container_name: adminer
-    restart: unless-stopped
-    ports:
-      - 8081:8080
-    depends_on:
-      - mysql
-    volumes:
-      - /etc/localtime:/etc/localtime:ro
-    networks:
-      - default
-
-  # Web Interface for Database: MySQL
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin:latest
-    container_name: phpmyadmin
-    restart: always
-    ports:
-      - 8082:80
-    volumes:
-      - /etc/localtime:/etc/localtime:ro
-    environment:
-      PMA_HOST: mysql
-      PMA_USER: ${MYSQL_USER}
-      PMA_PASSWORD: ${MYSQL_PASSWORD}
-      PMA_PORT: 3306
-      TZ: ${TZ}
-    depends_on:
-      - mysql
-    networks:
-      - default
-
-
 volumes:
   mysql_data:      # Servidor 1: MySQL
-
 
 networks:
   default:

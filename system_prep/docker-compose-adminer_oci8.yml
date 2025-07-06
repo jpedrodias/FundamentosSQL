@@ -1,0 +1,24 @@
+# docker-compose-oracle com ferramenta web interface Adminer_ci8
+name: FundamentosSQL
+
+services:
+  adminer_oci8:
+    image: soivangoi/nginx-php-adminer-oci8:latest # Adminer with Oracle support
+    container_name: adminer-oracle
+    restart: unless-stopped
+    ports:
+      - 8085:80
+    depends_on:
+      - oracle
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    networks:
+      - default
+
+volumes:
+  oracle_data:
+
+networks:
+  default:
+    name: FundamentosSQL-network
+    driver: bridge
