@@ -4,6 +4,8 @@ privado/
 *.env_production
 *.env_mysql_production
 *.env_postgres_production
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
 *.log
 .venv/
 venv/
