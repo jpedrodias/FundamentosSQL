@@ -1,4 +1,4 @@
-# docker-compose com servidor PostgreSQL e ferramentas web: adminer e pgAdmin
+# docker-compose com servidor PostgreSQL
 name: FundamentosSQL
 
 services:
@@ -25,47 +25,9 @@ services:
       timeout: 5s
       retries: 5
 
-  # Web Interface for Database: vários
-  adminer:
-    image: adminer:latest
-    container_name: adminer_postgres
-    restart: unless-stopped
-    ports:
-      - 8081:8080
-    depends_on:
-      - postgres
-    volumes:
-      - /etc/localtime:/etc/localtime:ro
-    environment:
-      ADMINER_DEFAULT_SERVER: postgres
-      TZ: ${TZ}
-    networks:
-      - default
-
-  # Web Interface for Database: PostgreSQL
-  pgadmin:
-    image: dpage/pgadmin4:latest
-    container_name: pgadmin
-    restart: unless-stopped
-    ports:
-      - 8083:80
-    depends_on:
-      - postgres
-    volumes:
-      - /etc/localtime:/etc/localtime:ro
-      - pgadmin_data:/var/lib/pgadmin
-    environment:
-      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
-      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
-      TZ: ${TZ}
-    user: "5050:5050"  # Especifica o UID e GID do usuário pgadmin
-    networks:
-      - default
-
 
 volumes:
   postgres_data:   # Servidor 1: PostgreSQL
-  pgadmin_data:    # Web Interface: pgAdmin
 
 
 networks:
