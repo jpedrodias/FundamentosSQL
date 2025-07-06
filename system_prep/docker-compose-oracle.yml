@@ -57,4 +57,3 @@ networks:
   default:
     name: FundamentosSQL-network
     driver: bridge
-
