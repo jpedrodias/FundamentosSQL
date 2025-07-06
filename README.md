@@ -39,4 +39,5 @@ Preparação de servidores de bases de dados e ferramentas de acesso
 * [mockarro](https://mockaroo.com/) - Criação dados aleatórios
 * [dbdiagram.io](https://dbdiagram.io) - Desenho de ERD (Entity-Relationship Diagrams)
 * [draw.io](https://draw.io) - Desenho de ERD (Entity-Relationship Diagrams)
-
+* [SandboxSQL](https://sandboxsql.com/) - Ambiente online para praticar SQL com bases de dados reais
+* [SQLiteOnline](https://sqliteonline.com/) - Editor online para testar SQL em SQLite, PostgreSQL, MySQL e outros
