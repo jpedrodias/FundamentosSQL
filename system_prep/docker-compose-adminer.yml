@@ -1,4 +1,4 @@
-# docker-compose com ferramenta web: adminer
+# docker-compose com ferramenta web adminer
 name: FundamentosSQL
 
 services:
@@ -13,7 +13,6 @@ services:
       - /etc/localtime:/etc/localtime:ro
     networks:
       - default
-
 
 networks:
   default:
