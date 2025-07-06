@@ -1,4 +1,4 @@
-# docker-compose-oracle com ferramenta web interface Adminer_ci8
+# docker-compose-oracle com ferramenta web interface Adminer_oci8
 name: FundamentosSQL
 
 services:
@@ -18,4 +18,5 @@ services:
 networks:
   default:
     name: FundamentosSQL-network
+    #external: true # uncomment this on production
     driver: bridge
