@@ -15,9 +15,6 @@ services:
     networks:
       - default
 
-volumes:
-  oracle_data:
-
 networks:
   default:
     name: FundamentosSQL-network
