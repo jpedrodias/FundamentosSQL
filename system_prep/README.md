@@ -314,7 +314,4 @@ pip cache purge
 - [Mongo Express](https://github.com/mongo-express/mongo-express)
 
 
-## b) apenas online:
-- [SandboxSQL](https://sandboxsql.com/)
-
 ---
