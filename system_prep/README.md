@@ -81,23 +81,23 @@ winget install -e --id Docker.DockerDesktop
 git clone https://github.com/jpedrodias/FundamentosSQL.git
 cd FundamentosSQL
 ```
-> Ou, em alternatica, copie apenas o ficheiro `docker-compose.yml` e o ficheiro `.env`.
+> Ou, em alternativa, copie apenas o ficheiro `docker-compose.yml` e o ficheiro `.env`.
 
 
 
-### 2. Inicial docker container:
+### 2. Iniciar o docker container:
 ```bash
 cd system_prep
 docker compose up
 ```
-> Para manter os serviços ligados é necessário manter o terminal aberto e para parar estes serviços basta pressionar `Ctrl+C`
+> Para manter os serviços em funcionamento é necessário manter o terminal aberto e para parar estes serviços basta pressionar `Ctrl+C`
 
 Para iniciar os serviços em background é a mesma instrução mas, com a flag ` -d` (detached mode):
 ```bash
 cd system_prep
 docker compose up -d
 ```
-> E neste caso, para parar estes serviço que ficaram a correr em background fazer `docker compose down` ou fazer stop dentro do Docker Desktop.
+> E neste caso, para parar estes serviços que ficaram a correr em background fazer `docker compose down` ou parar através do Docker Desktop.
 
 
 
@@ -272,13 +272,13 @@ pip cache purge
 
 # 🖥️ Preparação do sistema para correr em máquina virtual:
 - [Oracle Database Free VirtualBox Appliance](https://www.oracle.com/database/technologies/databaseappdev-vm.html) (da Oracle)
-    - user: oracle | system, password: oracle
+    - user: oracle ou system, password: oracle
     - fazer atualizações
     ```bash
     sudo dnf check-updates
     sudo dnf clean all
     ```
-- [Máquinal Virtual "Mint" com base de dados MySql e Postgress](https://drive.google.com/file/d/15cBQOABUNHihoPV5I7NGLIcFw-IkJ3k7/view)
+- [Máquina Virtual "Mint" com base de dados MySql e Postgress](https://drive.google.com/file/d/15cBQOABUNHihoPV5I7NGLIcFw-IkJ3k7/view)
     - user: osboxes.org, password: osboxes.org
     - fazer/forçar atualizações:
     ```bash
@@ -298,10 +298,10 @@ pip cache purge
 
 # 🧰 Ferramentas para ligação a bases de dados:
 ## a) aplicações:
-- [DBveaver](https://dbeaver.io/download/) - ligação a diferentes bases de dados (sqlite, mysql, postgres, mongodb, oracle, etc);
+- [DBeaver](https://dbeaver.io/download/) - ligação a diferentes bases de dados (sqlite, mysql, postgres, mongodb, oracle, etc);
 - [sqlite3](https://www.sqlite.org/download.html) - ferramenta de linha de comandos para ligar a sqlite;
-- [DB Browser for SQLite](https://sqlitebrowser.org/) - ferramenta gráfica para sqlite;
-- [pgAdmin](https://www.pgadmin.org/download/) - ligação a db postgres;
+- [DB Browser for SQLite](https://sqlitebrowser.org/) - ferramenta gráfica para SQLite;
+- [pgAdmin](https://www.pgadmin.org/download/) - ligação a bases de dados PostgreSQL;
 - [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - para ligação a db mysql/mariadb
 - [SqlDbx](https://www.sqldbx.com/index.htm) - ligação a diferentes bases de dados;
 - [MongoDB Compass](https://www.mongodb.com/try/download/compass) - para ligação a MongoDB
