@@ -73,3 +73,4 @@ networks:
     name: FundamentosSQL-PostgreSQL-network
     #external: true # uncomment this on production
     driver: bridge
+
