@@ -37,7 +37,7 @@ if "%op%"=="A" %0 adminer
 if "%op%"=="B" %0 phpmyadmin
 if "%op%"=="C" %0 pgadmin
 if "%op%"=="D" %0 mongo_express
-if "%op%"=="E" %0 adminer_ci8
+if "%op%"=="E" %0 adminer_oci8
 
 if "%op%"=="x" goto STOP
 if "%op%"=="!" goto PURGE
@@ -62,7 +62,18 @@ goto MENU
 
 
 :STOP
-docker compose down
+docker compose -f docker-compose-mysql.yml down
+docker compose -f docker-compose-postgres.yml down
+docker compose -f docker-compose-mongo.yml down
+docker compose -f docker-compose-oracle.yml down
+docker compose -f docker-compose-sqlserver.yml down
+
+docker compose -f docker-compose-adminer.yml down
+docker compose -f docker-compose-phpmyadmin.yml down
+docker compose -f docker-compose-mongo_express.yml down
+docker compose -f docker-compose-pgadmin.yml down
+docker compose -f docker-compose-adminer_oci8.yml down
+
 goto MENU
 
 :RUN

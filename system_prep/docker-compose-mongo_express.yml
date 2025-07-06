@@ -12,7 +12,6 @@ services:
       - "8084:8081"
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - mongodb_data:/data/db
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: ${MONGO_INITDB_ROOT_USERNAME}
       ME_CONFIG_MONGODB_ADMINPASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
