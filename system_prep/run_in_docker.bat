@@ -50,7 +50,10 @@ goto MENU
 
 
 :PURGE
-docker compose down
+for %%f in (docker-compose-*.yml) do (
+    echo Parando %%f...
+    docker compose -f %%f down --remove-orphans
+)
 docker stop $(docker ps -aq)
 docker rm $(docker ps -aq)
 docker rmi $(docker images -q) -f
