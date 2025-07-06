@@ -1,9 +1,8 @@
-# docker-compose-oracle com servidor Oracle Database Free Edition e ferramenta web interface Adminer_ci8
+# docker-compose-oracle com servidor Oracle Database Free Edition
 name: FundamentosSQL
 
 # Versão não oficial
 # https://hub.docker.com/r/gvenzl/oracle-free # Oracle Database Free Edition
-# https://hub.docker.com/r/soivangoi/nginx-php-adminer-oci8 # Adminer with Oracle support
 
 services:
   # --- Oracle Database Free (XE/23c) -----------------------------
@@ -34,19 +33,6 @@ services:
     volumes:
       - oracle_data:/opt/oracle/oradata
       #- my-init.sql:/container-entrypoint-initdb.d/my-init.sql:ro
-    networks:
-      - default
-
-  adminer_oci8:
-    image: soivangoi/nginx-php-adminer-oci8:latest # Adminer with Oracle support
-    container_name: adminer-oracle
-    restart: unless-stopped
-    ports:
-      - 8085:80
-    depends_on:
-      - oracle
-    volumes:
-      - /etc/localtime:/etc/localtime:ro
     networks:
       - default
 
