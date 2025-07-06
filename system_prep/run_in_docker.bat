@@ -1,4 +1,5 @@
 @echo off
+REM Script para iniciar serviços Docker com base em docker-compose
 chcp 65001 >nul
 
 if "%1"=="" goto MENU
@@ -62,18 +63,12 @@ goto MENU
 
 
 :STOP
-docker compose -f docker-compose-mysql.yml down
-docker compose -f docker-compose-postgres.yml down
-docker compose -f docker-compose-mongo.yml down
-docker compose -f docker-compose-oracle.yml down
-docker compose -f docker-compose-sqlserver.yml down
-
-docker compose -f docker-compose-adminer.yml down
-docker compose -f docker-compose-phpmyadmin.yml down
-docker compose -f docker-compose-mongo_express.yml down
-docker compose -f docker-compose-pgadmin.yml down
-docker compose -f docker-compose-adminer_oci8.yml down
-
+for %%f in (docker-compose-*.yml) do (
+    echo Parando %%f...
+    docker compose -f %%f down --remove-orphans
+)
+echo Todos os serviços foram parados!
+pause
 goto MENU
 
 :RUN
