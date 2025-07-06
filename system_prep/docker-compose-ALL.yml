@@ -1,4 +1,4 @@
-# docker-compose com 3 servidores: mysql, postgres e mongodb e ferramentas web interface: adminer, phpmyadmin, pgAdmin e mongo-express
+# docker-compose com 5 servidores: mysql, postgres, mongodb, oracle e ms sql server e ferramentas web interface: adminer, phpmyadmin, pgAdmin e mongo-express
 name: FundamentosSQL
 
 services:
