@@ -1,8 +1,8 @@
-# docker-compose com servidor MS SQL Server e ferramenta web: adminer
+# docker-compose com servidor Microsoft SQL Server e ferramenta web: adminer
 name: FundamentosSQL
 
 services:
-  # Servidor 1: MS SQL Server Configuration
+  # Servidor 1: Microsoft SQL Server Configuration
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: mssql_server
