@@ -70,4 +70,3 @@ networks:
     name: FundamentosSQL-network
     #external: true # uncomment this on production
     driver: bridge
-
