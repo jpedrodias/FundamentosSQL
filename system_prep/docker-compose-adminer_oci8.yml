@@ -8,8 +8,6 @@ services:
     restart: unless-stopped
     ports:
       - 8085:80
-    depends_on:
-      - oracle
     volumes:
       - /etc/localtime:/etc/localtime:ro
     networks:
