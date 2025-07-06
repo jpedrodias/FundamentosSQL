@@ -1,4 +1,4 @@
-# docker-compose com ferramenta web: phpmyadmin
+# docker-compose com ferramenta web phpmyadmin
 name: FundamentosSQL
 
 services:
@@ -17,8 +17,6 @@ services:
       PMA_PASSWORD: ${MYSQL_PASSWORD}
       PMA_PORT: 3306
       TZ: ${TZ}
-    depends_on:
-      - mysql
     networks:
       - default
 
