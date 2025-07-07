@@ -37,3 +37,7 @@ pgadmin_data/
 .env_production
 *.env_mysql_production
 *.env_postgres_production
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
