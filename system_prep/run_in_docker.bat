@@ -6,25 +6,26 @@ if "%1"=="" goto MENU
 if not "%1"=="" goto RUN
 
 :MENU
+set op=""
 cls
-echo ==========================================
-echo   Escolha o serviço Docker a arrancar:
-echo =SERVIDORES===============================
-echo [ 1 ] - MySQL
-echo [ 2 ] - PostgreSQL
-echo [ 3 ] - MongoDB
-echo [ 4 ] - OracleDB CE
-echo [ 5 ] - Microsoft SQL Server Express
-echo [ * ] - Iniciar todos os servidores
-echo [ x ] - STOP Parar todos os servidores
-echo [ ! ] - PURGE - Limpar tudo (redes, volumes e imagens)
-echo [ 0 ] - Sair
-echo =FERRAMENTAS==============================
-echo [ A ] - Iniciar Adminer
-echo [ B ] - Iniciar phpMyAdmin
-echo [ C ] - Iniciar pgAdmin
-echo [ D ] - Iniciar Mongo Express
-echo [ E ] - Iniciar Adminer_ci8
+echo Escolha o serviço Docker:  ╔═════════════════════╗
+echo ╔══════════════════════════╣ S E R V I D O R E S ║
+echo ║ [ 1 ] - MySQL            ╚═════════════════════╣
+echo ║ [ 2 ] - PostgreSQL                             ║
+echo ║ [ 3 ] - MongoDB                                ║
+echo ║ [ 4 ] - OracleDB CE                            ║
+echo ║ [ 5 ] - Microsoft SQL Server Express           ║
+echo ║ [ * ] - Iniciar todos os servidores            ║
+echo ║ [ x ] - STOP Parar todos os servidores         ║
+echo ║ [ ! ] - PURGE Apagar tudo (vol., imagens, nw)  ║
+echo ║ [ 0 ] - Sair           ╔═══════════════════════╣
+echo ╠════════════════════════╣ F E R R A M E N T A S ║
+echo ║ [ A ] - Iniciar Adminer╚═══════════════════════╣
+echo ║ [ B ] - Iniciar phpMyAdmin                     ║
+echo ║ [ C ] - Iniciar pgAdmin                        ║
+echo ║ [ D ] - Iniciar Mongo Express                  ║
+echo ║ [ E ] - Iniciar Adminer_ci8                    ║
+echo ╚════════════════════════════════════════════════╝
 set /p op=Opção: 
 
 if "%op%"=="1" %0 mysql
@@ -34,13 +35,13 @@ if "%op%"=="4" %0 oracle
 if "%op%"=="5" %0 sqlserver
 if "%op%"=="*" %0 ALL
 
-if "%op%"=="A" %0 adminer
-if "%op%"=="B" %0 phpmyadmin
-if "%op%"=="C" %0 pgadmin
-if "%op%"=="D" %0 mongo_express
-if "%op%"=="E" %0 adminer_oci8
+if /I "%op%"=="A" %0 adminer
+if /I "%op%"=="B" %0 phpmyadmin
+if /I "%op%"=="C" %0 pgadmin
+if /I "%op%"=="D" %0 mongo_express
+if /I "%op%"=="E" %0 adminer_oci8
 
-if "%op%"=="x" goto STOP
+if /I "%op%"=="X" goto STOP
 if "%op%"=="!" goto PURGE
 if "%op%"=="0" exit
 
