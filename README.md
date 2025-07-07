@@ -14,7 +14,7 @@ Formação de Fundamentos de SQL (25h)
 
 # Preparação do sistema:
 Preparação de servidores de bases de dados e ferramentas de acesso 
-- MySQL, Postgres, OracleDB e MongoDB usando [**Docker**](system_prep/README.md#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-docker)
+- MySQL, Postgres, MongoDB, OracleDB e MS SQL Server usando [**Docker**](system_prep/README.md#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-docker)
 - SQL usando [**jupyter notebook**](system_prep/README.md#-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-jupyter-notebook)
 - MySQL e OracleDB usando [Máquina virtual](system_prep/README.md#%EF%B8%8F-prepara%C3%A7%C3%A3o-do-sistema-para-correr-em-m%C3%A1quina-virtual)
 - [Outras ferramentas](system_prep/README.md#-ferramentas-para-liga%C3%A7%C3%A3o-a-bases-de-dados)
