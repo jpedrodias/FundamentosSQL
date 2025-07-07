@@ -20,11 +20,11 @@ echo ║ [ x ] - STOP Parar todos os servidores         ║
 echo ║ [ ! ] - PURGE Apagar tudo (vol., imagens, nw)  ║
 echo ║ [ 0 ] - Sair           ╔═══════════════════════╣
 echo ╠════════════════════════╣ F E R R A M E N T A S ║
-echo ║ [ A ] - Iniciar Adminer╚═══════════════════════╣
-echo ║ [ B ] - Iniciar phpMyAdmin                     ║
-echo ║ [ C ] - Iniciar pgAdmin                        ║
-echo ║ [ D ] - Iniciar Mongo Express                  ║
-echo ║ [ E ] - Iniciar Adminer_ci8                    ║
+echo ║ [ A ] - Adminer        ╚═══════════════════════╣
+echo ║ [ B ] - phpMyAdmin                             ║
+echo ║ [ C ] - pgAdmin                                ║
+echo ║ [ D ] - Mongo Express                          ║
+echo ║ [ E ] - Adminer_ci8                            ║
 echo ╚════════════════════════════════════════════════╝
 set /p op=Opção: 
 
