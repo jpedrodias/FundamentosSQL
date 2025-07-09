@@ -41,7 +41,7 @@ run_service() {
 # Função para parar todos os serviços
 stop_all() {
     echo "Parando todos os serviços..."
-    for file in docker-compose-*.yml; do
+    for file in docker-compose*.yml; do
         if [ -f "$file" ]; then
             echo "Parando $file..."
             docker compose -f "$file" down --remove-orphans
