@@ -66,7 +66,7 @@ if /I not "%confirm%"=="y" (
 )
 
 echo Realizando limpeza completa...
-for %%f in (docker-compose-*.yml) do (
+for %%f in (docker-compose*.yml) do (
     echo Parando %%f...
     docker compose -f %%f down --remove-orphans
 )
