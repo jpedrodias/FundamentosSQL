@@ -3,3 +3,5 @@ jupyterlab
 jupysql
 mysqlclient
 psycopg2-binary
+pandas
+sqlalchemy
