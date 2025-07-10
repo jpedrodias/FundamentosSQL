@@ -6,6 +6,17 @@
 - 🧰 [Outras ferramentas](#-ferramentas-para-ligação-a-bases-de-dados)
 
 
+<div style="border: 2px solid #0078D7; padding: 10px; background-color: #F3F9FF; border-radius: 5px;">
+  <p>ℹ️ <strong>Nota:</strong> Este <code>Repo</code> deixou de ser atualizado. Contudo, esta <code>ideia</code> irá continuar a evoluir aqui:</p>
+  <table style="width: 100%; border-collapse: collapse;">
+    <tr>
+      <th style="text-align: left; border-bottom: 1px solid #0078D7;">Novo repositório:</th>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/jpedrodias/SQLab" style="color: #0078D7; text-decoration: none;">https://github.com/jpedrodias/SQLab</a></td>
+    </tr>
+  </table>
+</div>
 
 ---
 ---
@@ -18,7 +29,6 @@ Nos ficheiros de *compose* incluídos neste repositório existem diferentes cen�
 
 | Ficheiro                         | Servidores                      | Ferramentas Web                  |
 |----------------------------------|---------------------------------|----------------------------------|
-| **docker-compose.yml**           | MySQL                           | Adminer, phpMyAdmin              |
 | **docker-compose-mysql.yml**     | MySQL                           | Adminer, phpMyAdmin              |
 | **docker-compose-postgres.yml**  | PostgreSQL                      | Adminer, pgAdmin                 |
 | **docker-compose-mongo.yml**     | MongoDB                         | Mongo Express                    |
