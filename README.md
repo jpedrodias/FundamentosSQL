@@ -41,3 +41,41 @@ Preparação de servidores de bases de dados e ferramentas de acesso
 * [draw.io](https://draw.io) - Desenho de ERD (Entity-Relationship Diagrams)
 * [SandboxSQL](https://sandboxsql.com/) - Ambiente online para praticar SQL com bases de dados reais
 * [SQLiteOnline](https://sqliteonline.com/) - Editor online para testar SQL em SQLite, PostgreSQL, MySQL e outros
+
+
+---
+## Resumo do Conteúdo Programático
+* Áreas de intervenção de um administrador de base de dados
+* Manutenção do equipamento, da rede e do sistema operativo e do servidor File/Print
+* Manutenção do sistema de base de dados
+* Plano de instalação de um sistema de base de dados
+* Gestão da instalação de base de dados
+* Configuração do servidor
+* Gestão de dispositivos
+* Gestão de base de dados
+* Gestão dos objetos de base de dados
+* Gestão de modelos de logins
+* SQL Scripts
+* Modelo de backup
+* Partilha de tarefas
+* Gestão de alertas
+* Gestão de atividade dos utilizadores
+* Dispositivos em base de dados
+* Criação, alteração e remoção de dispositivos
+* Gestão de base de dados
+* Criação de uma base de dados
+* Opções de base de dados
+* Operações sobre a base de dados
+* Utilizadores de base de dados
+* Grupo de utilizadores
+* Perfil de utilizador
+* Segurança de base de dados
+* Níveis de segurança
+* Hierarquia da segurança
+* Permissões sobre objetos
+* Procedimentos de segurança de dados
+
+## Objectivos Gerais:
+* Reconhecer as áreas de intervenção de um administrador de base de dados.
+* Definir e implementar um plano de instalação de um sistema de base de dados.
+* Proceder à gestão e instalação de base de dados.
